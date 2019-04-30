@@ -1,0 +1,62 @@
+CSS Selectors:
+
+1- Element: 
+    in html file
+        <h1> our header</h1>
+        <p>the blog Post</p>
+        <div>More Info</div>
+    in css file 
+        h1 {
+            color: red;
+        }
+
+        just affect <h1> element in the html file
+
+2- Classes
+    in html file
+        <h1 class="blog-post"> our header</h1>
+        <p class="blog-post">the blog Post</p>
+        <div class="blog-post">More Info</div>
+    in css file 
+        .blog-post {
+            color: red;
+        }
+
+        affects all element in the html file
+
+3- Universal 
+    in html file
+        <h1 class="blog-post"> our header</h1>
+        <p class="blog-post">the blog Post</p>
+        <div class="blog-post">More Info</div>
+    in css file 
+        * {
+            color: red;
+        }
+
+        affects everything in the html file
+
+4- IDs
+    in html file
+        <h1 id="main-title"> our header</h1>
+        
+    in css file 
+        #main-title {
+            color: red;
+        }
+        
+        select with the #
+
+5- Attributes
+    in the html file
+        <button disabled> Click </button>
+    
+    in the CSS file 
+        [disabled] {
+            color: red;
+        }
+    
+    affects every element with the "disabled" Attributes
+    
+
+ 
