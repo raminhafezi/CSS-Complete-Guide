@@ -1,5 +1,5 @@
-section {
-    background: #ff1b68;
+#product-overview {
+    background : #ff1b68;
 }
 
 h1 {
@@ -7,7 +7,7 @@ h1 {
     font-family: 'Courier New', Courier, monospace
 }
 
-h3 {
-    color: lightgreen;
-    font-family: 'Josefin Slab', serif;
+
+.section-title {
+    color: #2ddf5c;
 }

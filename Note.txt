@@ -57,6 +57,16 @@ CSS Selectors:
         }
     
     affects every element with the "disabled" Attributes
-    
+
 
  
+
+ Cascading style sheets and Specificity
+
+ Higher to Lower order to apply for style
+ 
+    1- Inline Styles.
+    2- #id Selectors.
+    3- .Class, :pseudo class and [attribute] Selectors.
+    4- <Tag> and ::pseudo-element Selectors.
+    
