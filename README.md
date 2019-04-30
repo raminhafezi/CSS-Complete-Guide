@@ -23,40 +23,40 @@ Talking about the course project - we'll build the frontend (no backend) of a fi
 <br /><br />
 Here's what's inside the course in detail - this is all also applied to the mentioned course project:
 <br />
-The basics about selectors, combinators and how you set up styling rules in general <br />
-Properties, values and decalarations <br />
-How specifity and inheritance work and why it's called "Cascading" Style Sheets<br />
-Important theoretical concepts like the "Box Model"<br />
-How the default position of elements can be changed<br />
-Styling backgrounds (e.g. gradients) and images<br />
-Which units and dimensions you typically use in CSS (px, rem, % and more)<br />
-How JavaScript and CSS interact<br />
-Responsive design and what "Mobile First" means <br />
-Styling forms and form inputs<br />
-Working with text, fonts and text styles<br />
-Flexbox! How it works and how to use it<br />
-Using the CSS Grid and how it differs from Flexbox<br />
-Transforming and animating HTML elements with the help of CSS<br />
-Writing future-proof CSS with features like CSS variables or best-practice class names<br />
-Using Sass and what it actually is all about<br />
+1 -The basics about selectors, combinators and how you set up styling rules in general <br />
+2 -Properties, values and decalarations <br />
+3 -How specifity and inheritance work and why it's called "Cascading" Style Sheets<br />
+4 -Important theoretical concepts like the "Box Model"<br />
+5 -How the default position of elements can be changed<br />
+6 -Styling backgrounds (e.g. gradients) and images<br />
+7 -Which units and dimensions you typically use in CSS (px, rem, % and more)<br />
+8 -How JavaScript and CSS interact<br />
+9 -Responsive design and what "Mobile First" means <br />
+10-Styling forms and form inputs<br />
+11-Working with text, fonts and text styles<br />
+12-Flexbox! How it works and how to use it<br />
+13-Using the CSS Grid and how it differs from Flexbox<br />
+14-Transforming and animating HTML elements with the help of CSS<br />
+15-Writing future-proof CSS with features like CSS variables or best-practice class names<br />
+16-Using Sass and what it actually is all about<br />
 
 <br /><br />
 Is this course for you?
 <br />
-It's for you if ...
+<strong>It's for you if ...</strong>
 <br />
-you started with learning web development and you want to build more beautiful websites<br />
-you already know CSS but want to dive deeper<br />
-you're using CSS in a trial-and-error manner and want to change this (you should!)<br />
+# you started with learning web development and you want to build more beautiful websites<br />
+# you already know CSS but want to dive deeper<br />
+# you're using CSS in a trial-and-error manner and want to change this (you should!)<br />
 <br /><br />
-You might come back later if ...
+<strong>You might come back later if ...</strong>
 <br />
-you're an absolute CSS pro and you know the CSS working group drafts by heart<br />
-you're a backend-only developer (Node, PHP, NO HTML or frontend JavaScript)<br />
-you're a total newcomer to web development and you don't know the basics about HTML<br />
-If that sounds good to you, we'd be more than happy to welcome you in this course!<br />
+# you're an absolute CSS pro and you know the CSS working group drafts by heart<br />
+# you're a backend-only developer (Node, PHP, NO HTML or frontend JavaScript)<br />
+# you're a total newcomer to web development and you don't know the basics about HTML<br />
+# If that sounds good to you, we'd be more than happy to welcome you in this course!<br />
 <br /><br />
-Who this course is for:<br />
-Anyone who wants to learn CSS for the first time or wants to sharpen his or her CSS skills<br />
-Anyone who's excited to learn about the latest CSS features like Flexbox, CSS Grid or CSS Variables<br />
-Anyone who knows CSS but wants to dive deeper<br />
+<strong>Who this course is for:</strong><br />
+# Anyone who wants to learn CSS for the first time or wants to sharpen his or her CSS skills<br />
+# Anyone who's excited to learn about the latest CSS features like Flexbox, CSS Grid or CSS Variables<br />
+# Anyone who knows CSS but wants to dive deeper<br />
