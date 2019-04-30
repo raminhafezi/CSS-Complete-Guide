@@ -1,0 +1,59 @@
+if ypu faced 
+Git Push Error: insufficient permission for adding an object to repository database
+
+when you want to push changes from Visual Studio Code in linux mint,
+
+Go to your git repo directory in your project and then
+
+
+
+cd /path/to/repo.git
+sudo chgrp -R groupname .
+sudo chmod -R g+rwX .
+find . -type d -exec chmod g+s '{}' +
+
+
+ote if you want everyone to be able to modify the repository, 
+you don't need the chgrp and you will want to change the chmod to 
+    sudo chmod -R a+rwX .
+
+
+
+
+    ===============
+
+
+source: https://stackoverflow.com/questions/6448242/git-push-error-insufficient-permission-for-adding-an-object-to-repository-datab
+
+Q: When I try to push to a shared git remote, I get the following error: insufficient permission for adding an object to repository database
+
+A: 764
+
++50
+Repair Permissions
+After you have identified and fixed the underlying cause (see below), you'll want to repair the permissions:
+
+cd /path/to/repo.git
+sudo chgrp -R groupname .
+sudo chmod -R g+rwX .
+find . -type d -exec chmod g+s '{}' +
+Note if you want everyone to be able to modify the repository, you don't need the chgrp and you will want to change the chmod to sudo chmod -R a+rwX .
+
+If you do not fix the underlying cause, the error will keep coming back and you'll have to keep re-running the above commands over and over again.
+
+Underlying Causes
+The error could be caused by one of the following:
+
+The repository isn't configured to be a shared repository (see core.sharedRepository in git help config). If the output of:
+
+git config core.sharedRepository
+is not group or true or 1 or some mask, try running:
+
+git config core.sharedRepository group
+and then re-run the recursive chmod and chgrp (see "Repair Permissions" above).
+
+The operating system doesn't interpret a setgid bit on directories as "all new files and subdirectories should inherit the group owner".
+
+When core.sharedRepository is true or group, Git relies on a feature of GNU operating systems (e.g., every Linux distribution) to ensure that 
+newly created subdirectories are owned by the correct group
+ (the group that all of the repository's users are in). This feature is documented in the GNU coreutils documentation:
