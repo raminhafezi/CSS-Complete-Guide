@@ -43,7 +43,7 @@ Here's what's inside the course in detail - this is all also applied to the ment
 <br /><br />
 Is this course for you?
 <br />
-<strong>It's for you if ...</strong>
+It's for you if ...
 <br />
 # you started with learning web development and you want to build more beautiful websites<br />
 # you already know CSS but want to dive deeper<br />
