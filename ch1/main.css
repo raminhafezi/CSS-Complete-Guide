@@ -1,9 +1,11 @@
 body {
     font-family: Montserrat;
+    margin:0;
 }
 
 #product-overview {
     background : #ff1b68;
+    height: 528px;
 }
 
 h1 {
