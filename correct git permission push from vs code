@@ -27,10 +27,7 @@ source: https://stackoverflow.com/questions/6448242/git-push-error-insufficient-
 
 Q: When I try to push to a shared git remote, I get the following error: insufficient permission for adding an object to repository database
 
-A: 764
-
-+50
-Repair Permissions
+A:Repair Permissions
 After you have identified and fixed the underlying cause (see below), you'll want to repair the permissions:
 
 cd /path/to/repo.git
@@ -43,7 +40,6 @@ If you do not fix the underlying cause, the error will keep coming back and you'
 
 Underlying Causes
 The error could be caused by one of the following:
-
 The repository isn't configured to be a shared repository (see core.sharedRepository in git help config). If the output of:
 
 git config core.sharedRepository

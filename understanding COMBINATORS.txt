@@ -1,0 +1,84 @@
+1- Adjacent Sibling
+
+    h2 + p {
+        color: red;
+    }
+
+Example: 
+    <div>
+        <h2> Not Applied  </h2>
+        <p>  CSS Applied  </p>
+        <h2> Not Applied  </h2>
+        <h3> Not Applied  </h3>
+        <p>  Not Applied  </p>
+        <h2> Not Applied  </h2>
+        <p>  CSS Applied  </p>
+    </div>
+
+- Same Parent
+- Second element "<p> tag" comes immediately after the first element "<h2> tag".
+
+----------------
+2- General Sibling
+
+    h2 ~ p {
+        color: red;
+    }
+
+
+Example: 
+    <div>
+        <h2> Not Applied  </h2>
+        <p>  CSS Applied  </p>
+        <h2> Not Applied  </h2>
+        <h3> Not Applied  </h3>
+        <p>  CSS Applied  </p>
+    </div>
+
+- Same Parent
+- Any <p> tags that is a child of the <div> and is a Sibling of the <h2> ata, gets red color.
+
+
+-----------------------
+3- Child
+
+    div > p {
+        color: red;
+    }
+
+
+Example: 
+    <div>
+        <h2> Not Applied  </h2>
+        <p>  CSS Applied  </p>
+        <div> Not Applied  </div>
+        <article>
+            <p>  Not Applied  </p>
+        </article>
+        <p>  CSS Applied  </p>
+    </div>
+
+- Any paragraph "<p>" that is a direct child of the parent
+- In this example both <p> tags are the child of the <div>, so they both get the red color.
+
+-----------------------
+4- Descendant
+
+    div p {
+        color: red;
+    }
+
+
+Example: 
+    <div>
+        <h2> Not Applied  </h2>
+        <p>  CSS Applied  </p>
+        <div> Not Applied  </div>
+        <article>
+            <p>  CSS Applied  </p>
+        </article>
+        <p>  CSS Applied  </p>
+    </div>
+
+- Any paragraph "<p>" that is a child of the parent
+- In this example both <p> tags are the child of the <div>, so they both get the red color.
