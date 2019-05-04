@@ -1,32 +1,24 @@
 body {
     font-family: Montserrat;
-    margin:0;
+    margin: 0;
 }
 
 #product-overview {
-    background : #ff1b68;
+    background: #ff1b68;
     height: 528px;
 }
 
 h1 {
-    color:white;
+    color: white;
     font-family: 'Courier New', Courier, monospace
 }
 
-<<<<<<< HEAD
-h3 {
-    color: lightgreen;
-    font-family: 'Josefin Slab', serif;
-    background: black;
-}
-=======
 
 .section-title {
     color: #2ddf5c;
- }
+}
 
- .here_is_additional_secion {
-    
-    color:none;
- }
->>>>>>> e0b7fea07bed1bff629c0c4a2f5e2d47ed5ce1f5
+.here_is_additional_secion {
+
+    color: none;
+}
