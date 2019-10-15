@@ -100,7 +100,8 @@
         <p></p> #Red Color
         <h1></h1>
         <p></p> #Red Color
-    3- Child 
+    3- Child  #give style to direct child(s) 
+              #also we can expand it like div > span > p > a means all a tag that is child of p and p is child of span and ...
         div > p {
 
         }
