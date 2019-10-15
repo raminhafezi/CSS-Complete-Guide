@@ -1,0 +1,110 @@
+1- inline style : You can define Style in any tag by  <section style=" background: #659874"> </section>
+2- Style tag in head section: 
+    <style>  ## you define your rules in here  like 
+        section: {Background: #ff1b68} 
+        div: {Background: dark-grey}
+    </style>
+3- External stylesheet: define link tagin your head section io other file for CSS style by
+    <link rel="stylesheet" href="Path/to/your/file">
+
+4- in the external stylesheet fiel you define your section and then property in {}
+    section {
+        background : red;
+    }
+
+    h1 {
+        color: blue;
+        font-family: sens-serif; # this is the defailt font family
+    }
+5- you can use the google font 
+    first visit fonts.google.com
+    search for the 
+    click on the plus
+    copy the link tag and paste it in the head section
+    copy the CSS section from the google font webstite and paste it on your CSS file
+
+6- Selectors: helps us refer to different eleemtn in the page and assign specific styles. 
+    1- element Selectors like <h1> Here is H1 tag content</h1>
+        h1 {
+
+        }
+    2- class Selectors like <p class="blog-post blog-comments">you can reuse this item so assign a class
+                                you can also assign multiple class name by utting space between class name </p>
+        .blog-post {
+
+        }
+    3- universal
+        * {
+
+        }
+    4- ID Selectors like <h1 id="main-title"> semanticly ID use only one in your html page.</h1>
+        #main-title {
+            
+        }
+    5- attribute Selectors like <button disable ></button>
+        [disable] {
+
+        }
+    
+    6- Specificity: 
+        inline style has the highest priority
+        then class selector comes next
+        on the same level, the top has the higher priority than the one who comes next
+        browser defaul has the lowest priority
+
+
+        from lowest to highest --> tag, class and attribute, ID selectors, inline-style
+
+    7- Inheritence:
+        elements inherited from direct or indirect parents
+        usually use to set one specifications on all elements we can use it with *, but * has the lowest spefificity
+
+        better way is to set it to body class
+            body {
+                
+            }
+
+            font-family: inherited
+
+    8- combinator: 
+        use when we want to assign an specificaiton to one specific tag, we can do this by assigning the ID or class
+        to the tag, but that is not a good approach,
+        we can use combinator to select specific tag inside other tag (maybe)
+        like 
+
+        any h1 tag inside tags with #product-overview ID
+        #product-overview h1 {  
+            color: blue;
+        }
+        
+7- Combinator 
+    1- Adjacent Sibling   #Assign style to the first sibing that directly followed/after (direct sibling)
+                          #after div tag 
+        div + p { 
+            color : red
+        }
+        <div></div>
+        <p></p> #Red Color
+        <p></p> #No Red Color
+        <p></p> #No Red Color
+        <div></div>
+        <p></p> #Red Color
+        <p></p> #No Red Color
+    2- General Sibling   #Assign style to all sibling(s) at the same level.. 
+        div ~ p {
+
+        }
+        <div></div>
+        <p></p> #Red Color
+        <p></p> #Red Color
+        <p></p> #Red Color
+        <h1></h1>
+        <p></p> #Red Color
+    3- Child 
+        div > p {
+
+        }
+    4- Descendant
+        div p {
+
+        }
