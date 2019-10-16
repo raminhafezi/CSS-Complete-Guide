@@ -109,3 +109,62 @@
         div p {
 
         }
+8- Source of the CSS is: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+9- BOX MODEL: every element in the CSS is rounded by the box, 
+    from inner to outter side, we have Padding, Border, as well as Margin.
+
+10- Body has a margin, so its a best practice to set body margin to 0.
+11 - Margin collaspsing: 
+    Two elements back to back can overlap their margins, and their margins become 1 margin. 
+    bigger margin always wins this competiton. 
+    we also can use margin-top or margin-bottom 
+
+12- Shorten Properties:
+    border-width: 2px;
+    border-style: dashed | solid;
+    border-color: orange;
+    
+    we can combine all of these style in to one line
+    border: 2px dashed orange
+
+    or 
+    margin: 5xp 10px 5px 10px; 
+        Which represent top, right, bottom, left in an order
+    or you can summarize it into 
+        margin: 5px 10px; 
+        which represent top and bottom, righ and left
+        margin: 2px; 
+        margin applied to all sides.
+
+13- Block level Elements: like section and header and ....
+    block level elements is different from inline elements and this is an HTML features.
+    Block level elements always take full length by default.
+
+    we can set width to px or % like
+    width: 200px;
+    or
+    width: 50%
+
+    this means the available space that parent of the element allowed to this element.
+
+14- height is the same as width and space allocation comes from the parent so we can play around in that defined space.
+    so if you want to set the height of an element into 400px we have to double check its parent and check 
+    the hight of the parent to be at least 400px.
+    if we have a nested element, we have to pass down and double check the height of 
+    parent and ground parents. basically from top to down/ parent to child
+
+15- box-sizing: border-box vs content-box 
+    When you specify the hight and width of the element, you actually specify the content size, at the end, 
+    padding and border will be added by the browser to your specify sizing and make the element bigger.
+
+    By default when you add width and height, you are adding to the content-box not the whole element
+    so we call it box-sizing: content-box;
+
+    we can change that default behaviour by defining box-sizing az border-box, now the padding and border 
+    will be included in the width and hight, but the margin is not included, and we can not make margin include in the border box
+
+    box-sizing: border-box;
+
+
+

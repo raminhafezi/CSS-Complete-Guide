@@ -8,9 +8,20 @@ body {
     height: 528px;
 }
 
+h3 {
+    padding: 3px;
+    background: #203aad;
+}
+
 h1 {
     color: white;
     font-family: 'Inconsolata', monospace;
+    width: 200px;
+    border: 5px solid #000;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    box-sizing: border-box;
 }
 
 .section-title {
@@ -23,4 +34,14 @@ h1 {
 
 div>span>p {
     color: blue;
+}
+
+div>ul {
+    background: #6671cf;
+    padding: 4px;
+    margin: 2px;
+}
+
+.orderList {
+    width: 20%;
 }
