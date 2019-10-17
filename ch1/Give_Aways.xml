@@ -166,5 +166,11 @@
 
     box-sizing: border-box;
 
+    box-sizing: border-box is so useful that often use as the default and defined in the universal section.
+
+    * {
+        box-sizing: border-box;
+    }
+
 
 

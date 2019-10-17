@@ -45,3 +45,9 @@ div>ul {
 .orderList {
     width: 20%;
 }
+
+.main-header {
+    width: 100%;
+    background: green;
+    padding: 5px 10px;
+}
