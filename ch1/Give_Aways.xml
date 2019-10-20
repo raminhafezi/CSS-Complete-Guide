@@ -161,7 +161,7 @@
     By default when you add width and height, you are adding to the content-box not the whole element
     so we call it box-sizing: content-box;
 
-    we can change that default behaviour by defining box-sizing az border-box, now the padding and border 
+    we can change that default behaviour by defining box-sizing as border-box, now the padding and border 
     will be included in the width and hight, but the margin is not included, and we can not make margin include in the border box
 
     box-sizing: border-box;
@@ -172,5 +172,31 @@
         box-sizing: border-box;
     }
 
+
+16- Inline elements and block elements: The role of style =" display: block"
+
+    in html we have inline and block level elements
+    - inline elements is like <a>, they are rendered in line, if we have two inline elements
+      next to each other, they are rendered in the same line.
+    - block elements is like the list items <li> they are rendered on the seperate line.
+      and do not take the full entire width as inline elements.
+    - they inline and block elements both use the box model but for the inline elements we 
+      can not use the top and bottom margin, because they donot take a new line 
+      necessarily. but we can change this behaviour with the "display"  property.
+
+      so for example we set the display="block" in the <a> property, they behaive like the block
+      element and a new <a> will take the new line.
+
+      <a style="display: block" >item 1</a>
+      <a style="display: block" >item 2</a>
+
+
+      - display: none
+        we can use display:none to not showing th element in our web page, the main
+        usage of this property is to handle the element visibility by the javascript class
+      
+      - display: inline-block
+        we can use this style for setting elements next to each other but act them as a block element
+        not an inline elements, which means we can set top and bottom margin to the inline elements like :<a>
 
 
