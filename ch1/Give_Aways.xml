@@ -199,4 +199,12 @@
         we can use this style for setting elements next to each other but act them as a block element
         not an inline elements, which means we can set top and bottom margin to the inline elements like :<a>
 
+17- Vertical-align : middle;
 
+    When we inline tags with inline block, or when we customtize font size, 
+    aligned elements would be on different height. we can fix that with vertical-align: middle. 
+    we have to set the vertical-align: middle to bvoth elements., 
+    in our example, both div with class as main-nav have the middle in vertical-align
+
+
+18- 
