@@ -207,4 +207,42 @@
     in our example, both div with class as main-nav have the middle in vertical-align
 
 
-18- 
+18- Pseudo Class and pseudo elements
+
+    1- Pseudo classs:
+        give us ability yo define style of special state of am element
+        and defined by : class name
+
+        Example: 
+            .main-nav__item a:hover {
+            color:red;
+            }
+        or
+            .main-nav__item a:active {
+                color:red;
+            }
+        tips: we can group them together
+
+        .main-nav__item a:hover,
+        .main-nav__item a:active,
+        .main-nav__item a:disable {
+            color:red;
+        }
+    2- Pseudo element:
+        give us ability to define style of an specific part of an element
+        and defined by : : element name
+        
+        Example:
+        we want to capitalize the first letter in each paragraph the same as newspaper style
+
+        p :: first-letter {
+            color: red;
+            font-size : 35px;
+        }
+        
+    we can change the element style by sudo class. means when mouse hover on the element or when the element is activated
+    we can use Pseudo class by assigning :hover or :active to the css class
+
+    such as 
+
+    

@@ -45,18 +45,18 @@ Is this course for you?
 <br />
 It's for you if ...
 <br />
-# you started with learning web development and you want to build more beautiful websites<br />
-# you already know CSS but want to dive deeper<br />
-# you're using CSS in a trial-and-error manner and want to change this (you should!)<br />
+you started with learning web development and you want to build more beautiful websites<br />
+you already know CSS but want to dive deeper<br />
+you're using CSS in a trial-and-error manner and want to change this (you should!)<br />
 <br />
 <strong>You might come back later if ...</strong>
 <br />
-# you're an absolute CSS pro and you know the CSS working group drafts by heart<br />
-# you're a backend-only developer (Node, PHP, NO HTML or frontend JavaScript)<br />
-# you're a total newcomer to web development and you don't know the basics about HTML<br />
-# If that sounds good to you, we'd be more than happy to welcome you in this course!<br />
+you're an absolute CSS pro and you know the CSS working group drafts by heart<br />
+you're a backend-only developer (Node, PHP, NO HTML or frontend JavaScript)<br />
+you're a total newcomer to web development and you don't know the basics about HTML<br />
+If that sounds good to you, we'd be more than happy to welcome you in this course!<br />
 <br />
 <strong>Who this course is for:</strong><br />
-# Anyone who wants to learn CSS for the first time or wants to sharpen his or her CSS skills<br />
-# Anyone who's excited to learn about the latest CSS features like Flexbox, CSS Grid or CSS Variables<br />
-# Anyone who knows CSS but wants to dive deeper<br />
+Anyone who wants to learn CSS for the first time or wants to sharpen his or her CSS skills<br />
+Anyone who's excited to learn about the latest CSS features like Flexbox, CSS Grid or CSS Variables<br />
+Anyone who knows CSS but wants to dive deeper<br />

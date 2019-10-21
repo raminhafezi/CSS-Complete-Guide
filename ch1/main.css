@@ -11,7 +11,7 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;3
+    font-size: 22px;
 }
 
 #product-overview {
@@ -56,24 +56,41 @@ div>ul {
 .main-header {
     width: 100%;
     background: #2ddf5c; 
-    padding: 8px 16px;    
+    padding: 8px 16px;   
 }
 
 .main-header > div {
     display: inline-block;
 }
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc (100% - 160 );
+    vertical-align: middle;
+}
+
 .main-nav__items  {
     padding: 0%;
     margin: 0%;
+    display: inline-block;
     list-style: none;
+    text-align: right;
 }
 .main-nav__item {
     display: inline-block;
+    margin: 0 16px;
 }
-.main-nav {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    vertical-align: middle;
 
+.main-nav__item a {
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 4px 0px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active,
+.main-nav__item a:disabled {
+    color: white;
+    text-decoration: none;
+    border-bottom: 7px solid white;
 }
