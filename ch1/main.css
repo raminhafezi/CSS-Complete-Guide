@@ -58,6 +58,10 @@ div>ul {
     background: #2ddf5c; 
     padding: 8px 16px;    
 }
+
+.main-header > div {
+    display: inline-block;
+}
 .main-nav__items  {
     padding: 0%;
     margin: 0%;
