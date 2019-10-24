@@ -88,8 +88,7 @@ div>ul {
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active,
-.main-nav__item a:disabled {
+.main-nav__item a:active {
     color: white;
     text-decoration: none;
     border-bottom: 7px solid white;
