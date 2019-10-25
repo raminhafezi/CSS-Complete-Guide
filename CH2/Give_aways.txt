@@ -1,0 +1,56 @@
+1- We ca select an element with the specific class with the following notation
+
+    <a class="activated"> here is a text </a>
+
+    then in the CSS class to specifically mentioned this ancer tag with the
+    class name activated we can write the CSS in this way
+
+    .a.activated {
+        background:"blue";
+    }
+
+    or when you want to set style to an specific a tag with the id, you can use
+    a#id_name {
+        color: "black";
+    }
+
+
+2- we prefer to use class for adding style to an html element not an ID,
+    with the class we can also attach it to the javascript, which is boundle alot with the html
+    so, adding class to the html element is our first priority. 
+
+    ID-selectors is only used whne you want to add style to one element in your page.
+    this is the only usage of the adding id to the html element.
+
+    in the page we can assign the reference to the id, for example we can 
+    use id to the href of the a tag to navigate to different seciton of the4 page from the menu
+    
+    <a href="#id_name"> go to this part of the page </a>
+    ....
+    ....
+    ....
+    <section id="id_name"> welcome to this part of the page </section>
+    
+3- !important
+
+    we can assign !important to any style in the css file. and it means this style is the highest specifity.
+
+    a {
+        background: #light_blue" !important;
+    }
+
+    using !importamt is not a good idea and it is not recommended.
+
+4- not
+    not is use when we want to add style to an element that does not have an specific features
+    for example we want to add style to a elements in the class which are not activated
+
+    in the css we add
+
+    a:not(.active) {
+        color:blue;    }
+
+
+    using not is not recomended because we can always use positive way.
+
+    

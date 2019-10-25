@@ -7,7 +7,7 @@
 3- External stylesheet: define link tagin your head section io other file for CSS style by
     <link rel="stylesheet" href="Path/to/your/file">
 
-4- in the external stylesheet fiel you define your section and then property in {}
+4- in the external stylesheet file you define your section and property in {}
     section {
         background : red;
     }
@@ -18,7 +18,7 @@
     }
 5- you can use the google font 
     first visit fonts.google.com
-    search for the 
+    search for the font name
     click on the plus
     copy the link tag and paste it in the head section
     copy the CSS section from the google font webstite and paste it on your CSS file
@@ -245,4 +245,19 @@
 
     such as 
 
+19- we can assign multiple class to an element by putting a space between them:
+    <a class="main-nav__item main-nav__item-cta"> </a>
     
+
+20- It is a good practice to reverse the color and background of the item when mouse hover it
+    .main-nav__item-cta a {
+        color: white;
+        background: #ff1b68;
+    }
+
+    .main-nav__item-cta a:hover,
+    .main-nav__item-cta a:active
+     {
+        color: #ff1b68;
+        background: white;
+    }

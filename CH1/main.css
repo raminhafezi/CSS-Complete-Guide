@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#product-overview {
+    background: url("/home/ramin/CSS-Complete-Guide/ch1/depositphotos_191144554-stock-video-happy-young-couple-having-fun.mp4");
+    height: 528px;
+}
+
+h3 {
+    padding: 3px;
+    background: #203aad;
+}
+
+h1 {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    width: 200px;
+    padding: 10px;
+}
+
+.section-title {
+    color: #2ddf5c;
+}
+
+.here_is_additional_secion {
+    color: none;
+}
+
+div>span>p {
+    color: blue;
+}
+
+div>ul {
+    background: #6671cf;
+    padding: 4px;
+    margin: 2px;
+}
+
+.orderList {
+    width: 20%;
+}
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c; 
+    padding: 8px 16px;   
+}
+
+.main-header > div {
+    display: inline-block;
+}
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc (100% - 160 );
+    vertical-align: middle;
+}
+
+.main-nav__items  {
+    padding: 0%;
+    margin: 0%;
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+}
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 4px 0px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    text-decoration: none;
+    border-bottom: 7px solid white;
+}
+
+.main-nav__item-cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item-cta a:hover,
+.main-nav__item-cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+
+}
