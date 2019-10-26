@@ -1,0 +1,6 @@
+1- useful tips for adding multiple cursor in linux (debian-ubuntu distro)
+    alt+click -> usually add another cursor to your vs code, but in dome linux distro
+    the alt does not work. To resolve this issue, we can go to the vs code, selection, 
+    switch to ctrl+click for m ultiple cursor.
+
+    
