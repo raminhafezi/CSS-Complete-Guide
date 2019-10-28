@@ -3,4 +3,23 @@
     the alt does not work. To resolve this issue, we can go to the vs code, selection, 
     switch to ctrl+click for m ultiple cursor.
 
+2- remove bullet point from the list item
+    we assigned a class to our list items and then in the css file
+
+    .plan__features {
+        list-style: none;
+    }
+3- shadow-box
     
+    shadow to the box 
+    we rhen assigned another class name to our middle box and then in the css file
+    .plna__highlighted {
+        box-shadow : offset-x, offset-y,blur-radius, spread-radius, color
+    }
+
+    rgba(red, green, blue, opacity)     
+        red, green, blue --> 0 to 255
+            0: black
+            255: white
+        opacity --> 0 to 1
+4- 
