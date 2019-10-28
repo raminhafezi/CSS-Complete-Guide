@@ -16,6 +16,8 @@ body {
 
 #product-overview {
     background: url("big_merino.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     height: 528px ;   
     padding: 10px;
 }
@@ -67,6 +69,27 @@ body {
 .plan_feature {
     margin: 15px 0px ;
 }
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font:inherit;
+    font-weight: bold;
+    border: 5px soli #0e4f1f;
+    padding: 8px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+.button:focus {
+    outline: none;
+}
+
 .h3 {
     padding: 3px;
 }

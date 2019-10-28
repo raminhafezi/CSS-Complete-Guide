@@ -22,4 +22,48 @@
             0: black
             255: white
         opacity --> 0 to 1
-4- 
+4- font:inherit
+    when we add button class, a set of default setting will be assigned to our button tag by the browser
+    we can overwrite this style by making changes into the button class in the css file
+    .button {
+        font: inherit;
+    }
+
+    in here we set inheritance priority to the button element and overwrite inheritance of the font which 
+    assigned to the button by the browser by the parent of our button tag
+    
+    
+    so, now the font in our button follow the same font of the other html tag element, not the font style
+    which will be assigned by the browser by default.
+
+5- button style 
+    it is a good idea to change the cursor to pointer when a mouse hover to the button tag
+    so it=n the css file for the button class
+    {
+        cursor: pointer;
+    }
+
+6- outline
+    outline is a property that can be assigne to an element and it behaves like a border, 
+    but it is actually not part of the border. for example when a button is clicked, 
+    the outline property will be assigned to its looks/CSS by default by the browser, and it add a rounded blue border
+    to our tag element. We can see that and test it if you inspect element in Chrome browser
+    when you select an button tag, look at the style section in the inspected element and click on the 
+    :hov you can see "Force Element State" and some additional attributes like 
+     :active
+     :focus
+     :focus-within
+     :hover
+     :visited
+    and each of these properties comes with the a ckeck box. So, we can checka and see the behaviour of our browser 
+    and we can check how our element will be styled by the browser when it is activated, visited, hovered, or focused
+
+    if for example we checked :hover, then we can check what css stylies will be added to our css file by the browser
+    and we can modify it by adding related CSS style into our style file.
+    for example if we donot like the browser-default :focus outline, we can remove it by adding following style into our file
+    .button_class:focus {
+        outline: none;
+    }
+
+
+    
