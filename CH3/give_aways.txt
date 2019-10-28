@@ -64,6 +64,4 @@
     .button_class:focus {
         outline: none;
     }
-
-
     
