@@ -12,12 +12,9 @@ sudo chgrp -R groupname .
 sudo chmod -R g+rwX .
 find . -type d -exec chmod g+s '{}' +
 
-
-ote if you want everyone to be able to modify the repository, 
+and if you want everyone to be able to modify the repository, 
 you don't need the chgrp and you will want to change the chmod to 
     sudo chmod -R a+rwX .
-
-
 
 
     ===============
