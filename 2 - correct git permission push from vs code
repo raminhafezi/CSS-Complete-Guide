@@ -50,3 +50,14 @@ The operating system doesn't interpret a setgid bit on directories as "all new f
 When core.sharedRepository is true or group, Git relies on a feature of GNU operating systems (e.g., every Linux distribution) to ensure that 
 newly created subdirectories are owned by the correct group
  (the group that all of the repository's users are in). This feature is documented in the GNU coreutils documentation:
+
+
+
+
+
+
+
+
+=================================================
+[SOLVED]
+"The Authencity for the host git@ithub.com cannot be establishd
