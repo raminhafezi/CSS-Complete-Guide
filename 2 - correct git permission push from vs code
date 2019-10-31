@@ -74,6 +74,10 @@ here is the command:
 
 
 
-For my on vs-coe in linux mint Tina, after changing to https, the vs code ask for username and password every time after push
+For my on vs-coe in linux mint Tina, after changing to https, the vs code ask for username and password 
+for the first time, then everything is smooth.
+it sounds liek vs-code saved entered credentials.
+
+I also generated and pasted SSH key to the git hub.
 
 
