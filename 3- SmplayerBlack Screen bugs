@@ -1,0 +1,9 @@
+Bug Description:
+Screen of player will go black when pasued and focus it set to another window. 
+This makes is hard when viewing training video to pause and type along
+
+Fix:
+Go to Options -> Preferences -> Advance -> Uncheck "Repaint the background of the video window" and then Correct PTS = Yes
+
+
+This should fix the bugs

@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 
+
 .main-header {
     width: 100%;
     background: #2ddf5c; 
@@ -16,6 +17,13 @@ body {
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
 }
 .main-nav {
     display: inline-block;

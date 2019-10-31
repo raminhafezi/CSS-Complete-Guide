@@ -1,0 +1,18 @@
+.packages-features {
+    background: #2ddf5c;
+    display: block;
+    margin: 10px 5px;    
+    padding: 20px 8px;
+    border: 3px solid green;
+}
+
+.packages-features:focus,
+.packages-features:hover {    
+    border: 3px solid red;
+}
+
+.package-features__annotation {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
