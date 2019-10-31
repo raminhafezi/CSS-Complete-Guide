@@ -1,0 +1,32 @@
+1- float: measn you overwrite the default positionning and tell browser to 
+    push element to the left or right of the page. 
+
+    so with the float, we actually take the element out of the page flow and put it to the right
+    or left of the page, in this case, the follow up tags/elements will take the position of 
+    our element. and we mess up the element position.
+    
+    This is why we usually donot want to use float.
+
+    We can use float with the image when we want the text float around our image. thenwe can use float in our image tags
+
+2- clear: both;
+    clear is a way of hacking the float. in the previous section we describe that using float will mess-up
+    our page flow design since the float mean detatching an element. so the next tag/element will take 
+    float element position. We can use a hack to fix this issue
+
+    in the html we simple add a <div></div> after element/tag with floar, and before any other element/
+    and assing a class to this dive, like class="clearFix"
+    then in the css file. we make 
+    
+    .clearFix {
+        clear: both;
+    }
+
+    this means we clear any float and the next tag/element will be fixed in their position instead of 
+    jumping and taking the space of the floated element.
+    ]
+    
+
+
+
+
