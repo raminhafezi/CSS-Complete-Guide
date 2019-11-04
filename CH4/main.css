@@ -36,12 +36,34 @@ body {
     width: 30%;
     vertical-align: middle;
 }
+
+.plan:hover,
+.plan:focus,
+.plan:active,
+.plan:focus {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.88);
+    outline: none;
+}
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 .plan__highlighted {
     background: #19b84c;   
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.849);
     border-radius: 6px;
 }
+.plan__highlighted:focus, 
+.plan__highlighted:active, 
+.plan__highlighted:visited
+{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
+    outline: none;
+    } 
 .plan__annotation {
     background: white;
     color: #19b84c;

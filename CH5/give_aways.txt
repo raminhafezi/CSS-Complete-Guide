@@ -1,0 +1,9 @@
+We are talking about POSITION in thic chapter
+
+# understanding position property
+# fixed navigation
+# position element with z-index
+# absolute and relative (stand alone and combined)
+# Sticky positioning
+# Stacking Context --> connecting to the z-index
+
