@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: Montserrat;
     margin: 0;
@@ -11,7 +10,10 @@ body {
 .main-header {
     width: 100%;
     background: #2ddf5c; 
-    padding: 8px 16px;   
+    padding: 8px 16px;  
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .main-header > div {
