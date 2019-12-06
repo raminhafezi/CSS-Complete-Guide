@@ -36,8 +36,19 @@ Video # 84
                 image to the X% point in the container. For example, 50% means it will align the middle of the image with the middle 
                 of the container. 100% means it will align the last pixel of the image with the last pixel of the container, and so on.
 
+                default value is 50%, so by defining 50% 50% nothing change. what actually means 50% ?
+                    background-position: 0% 50% : 50% means: from the part of the image that will not fit into the container, 50% cut from the top and 50% cut from the bottom
+                    background-position: 0% 10% means: from part of the image that did not fit into the container, 10% will be cut from the top and the rest
+                                         will be cut from the bottom. so image move down, cause more parts of the image cut from the bottom
+                    background-position: 0% 200% : means all cut from the top and not from the bottom, so image move up and end of the image will be perfectly
+                                         alligned with the bottom of the container
+
+
             - Keywords are just shortcuts for percentages. It's easier to remember and write top right than 100% 0, and that's why 
                 keywords are a thing. Here is a list of all five keywords and their equivalent values:
+
+                defailt value is the center, the same as 50% 50% 
+                or left top is the same as 0% 0%
                 
                 top: 0% vertically
                 right: 100% horizontally
