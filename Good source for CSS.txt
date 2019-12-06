@@ -2,4 +2,8 @@
     Source: https://labs.jensimmons.com/
 
 
-2- 
+2- caniuse.com
+    simply check if your CSS code is compatible with different version of browsers.
+
+3- Background Gradiant
+    Source: https://codepen.io/TheCSSKing/pen/VwwRzgg

@@ -9,12 +9,12 @@ We are talking about POSITION in this chapter
 
  video # 71
   Description of static and float positioning. 
-  imaginne you have a body element with 3 div's elements inside the body. by default each element follow the previous element
-  and position right after each other inside the body tag and take entire space in the body tag. This behaviour is the
-  default behaviour of block level element and follow the document flow. Question is does any property assign automatically thto the div elements
+  imagine you have a body element with 3 div's elements inside the body. by default each element follow the previous element
+  and position right after each other inside the body tag and take entire space which provided by the body element. This behaviour is the
+  default behaviour of block level element and follow the document flow. Question is does any property assign automatically into the div elements?
   so they can follow the default behaviour of the document flow? 
-  The naswer is yes. By default position property applied with the default value of "Static" so the div elements can be position right after each other
-  and take the entire provided space by the wrapper element, body in this case. 
+  The naswer is yes. By default "position: static" property applied to any element in the page so the div elements can be position right after 
+  each other and take the entire provided space by the wrapper element, body in this case. 
   So we can overrite this default position property and break the default document flow.
   Basically we can place any element in any position of our page by assigning different value to the "Position" property.
   Position can be set to 
@@ -23,33 +23,33 @@ We are talking about POSITION in this chapter
     3- relative
     4- absolute
     5- sticky
+ These value with conjunction with top/right/bottom/left value can be used to place any element in to our desire position in the page.
 
 
     1- static:
-        static is set by default to the position. if you want to overwrite it you have to set "position" to other value in the CSS file.
-        Static position are not affected by top/right/bottom/left. it is position in its own way according to document flow.
+        static value set by default to any element. if you want to overwrite it you have to set "position" to other value in the CSS file.
+        Static position are not affected by top/right/bottom/left. it is placed in the page in its own way according to document flow.
 
     2- Fixed Position
+        When we changed the position default element/static to the other value the element detached from its place in document flow and stick 
+        to the top left corner of the wrapper element, inside the wrapper element. Then we have options to place it where we want by 
+        assigning value to top/bottom/left/right
 
-        so when we changed the position default element/static to the other value the element detached from its place in document flow and stick 
-        to the top left corner of the wrapper element/inside the wrapper element. Then we have the option to place them where we want with the 
-        top/bottom/left/right
-        for example we can assing this attribute to the CSS file to place an element 200 from the top and 50 from the left.
+        for example we can assing following attributes to the CSS file to place an element 200 from the top and 50 from the left.
         {
             position: fixed;
             top: 200;
             left: 50
         }
 
-        with the "fixed" value to the "position" we will fixed the place of the element in the Viewport. What does it mean by viewpoert? viewport wha we will see 
-        from the page. By scrolling up and down viewport will be different. 
-        An element with fixed position, will stick to the view of the page, so if you scroll down or up the dixed element will always kepp its place and be visible.
+        with the "fixed" value to the "position" we will fixed a place of the element in the Viewport. What does it mean by viewpoert?
+        viewport wha we will see from the page. By scrolling up and down viewport will be different. 
+        An element with fixed position, will stick to the view of the page, so if you scroll down or up the dixed element will always 
+        keep its place and be visible.
 
-        This fixed property is good to fixed the navigation bar on the top. so when users scroll down the navigation keeps its 
-        position. also the fixed propert can be used for the background, so we fixed background into its place , we usuaaly
-        make a div tag and assign a class to the div element, then in the CSS file we fixe the positon and assign url
-
-
+        This fixed property usage is to fixed the navigation bar on the top. so when users scroll down the navigation an element with
+        fixed position keeps its palce in viewport. also the fixed element can be used for the background, so we fixed background into its place, 
+        we usuaaly make a div tag and assign a class to the div element, then in the CSS file we fixe div's positon and assign url
 
         website background:
             Here is my thought of the website background:
@@ -76,8 +76,8 @@ We are talking about POSITION in this chapter
 
     3- Relative Position
         This topic covered in video # 78
-        in the previos section we talked about the static and fixed position. We mentioned that the static position is assigned to the element by default
-        so if we want to move it and not follow the document flow, we have to change position value from "static" to "fixed" to first, detach an element from
+        in the previos sections we talked about the static and fixed position. We mentioned that the static position is assigned to the element by default
+        so if we want to move it against the document flow, we have to change position value from "static" to "fixed" to detach an element from
         the document flow and then we can assign top/right/bottom/left to place an element where we want.
 
         Relative position unlike fixed position does not detach an element from document flow. If an element position assign to relative, it means it will place to its
@@ -122,10 +122,27 @@ We are talking about POSITION in this chapter
         floating behavior.
 
 
+ Video # 81
+    Stacking Context and z-index
+        imagine we have a body element, inside we have and span, first one have 3 paragraph and second one have 1 header.
+        <body>
+            <div>
+                <p class="para1">   Paragraph 1 </p>
+                <p class="para2">   Paragraph 2 </p>
+                <p class="para3">   Paragraph 3 </p>
+            </div>
+            <span>
+                <h1 class="header">     Header1 </h1>
+            </span>
+        </body>
 
+    and we know that by assigning different value to the z-index we can move them back and forth / beyound and above other elements. 
+    Stacking context means the z-index value only impacts in the parent element domain. For example
+        z-index div: 0
+        z-index para3: +100
+        z-index h1: +1
 
+        in this case the Header1 would place above the Paragraph 3. because the z-index of Paragraph3 only inpacts on it's parent domain/div. and does not have impact
+        on the span domain. because the z-index of span is more than div, the Header1 is an element above all other in the page.
 
-
-
-
-
+        
