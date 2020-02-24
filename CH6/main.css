@@ -17,7 +17,7 @@ body {
 #product-overview {
     background-image: url("big_merino.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
     height: 528px ;   
     padding: 10px;
