@@ -1,4 +1,4 @@
-1- We ca select an element with the specific class with the following notation
+1- We can select an element with the specific class with the following notation
 
     <a class="activated"> here is a text </a>
 

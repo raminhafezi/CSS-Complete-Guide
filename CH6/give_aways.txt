@@ -1,0 +1,10 @@
+Box-sizing:
+    1- content-box, is the default value for box-sizing, if you set your element box-sizing to content-box (which is a default) so when you define your width and heigh, 
+                    you are styling the content of the box
+    2- border-box, with this value, you are styling the whole box, I mean with the height and width addressing, you are addressin content,
+                    padding, border, as well as margin of your element.
+
+                    The box-sizing property allows us to include the padding and border in an element's total width and height. 
+                    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: 
+
+                    

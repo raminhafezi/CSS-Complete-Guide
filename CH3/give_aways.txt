@@ -12,8 +12,8 @@
 3- shadow-box
     
     shadow to the box 
-    we rhen assigned another class name to our middle box and then in the css file
-    .plna__highlighted {
+    we then assigned another class name to our middle box and then in the css file
+    .plan__highlighted {
         box-shadow : offset-x, offset-y,blur-radius, spread-radius, color
     }
 
@@ -65,3 +65,18 @@
         outline: none;
     }
     
+
+7- Transition
+
+    it is a nice features to add transition and transition delay to the CSS in a case like you
+    want to highlight a background or change reverse color and background color in case of
+    focus of hover
+
+    it works like this
+    .some-css-class: hover,
+    .some-css-class: focus,
+    .some-css-class: active {
+       
+        transition-delay: 600ms;
+        transition: .75s all
+    }

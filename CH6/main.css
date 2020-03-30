@@ -59,7 +59,7 @@ body {
 .plan__highlighted {
     background: #19b84c;   
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.849);
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.49);
     border-radius: 6px;
 }
 .plan__highlighted:focus, 
@@ -68,16 +68,18 @@ body {
 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
     outline: none;
+    transition-delay: 600ms;
+    transition: .75s all
     } 
 .plan__annotation {
     background: white;
     color: #19b84c;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.849);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 }
 
 .plan__title {
-    color: #0e4f1f
+    color: #0e4f1f;
 }
 
 .plan__price {
@@ -85,8 +87,22 @@ body {
 
 }
 .plan__highlighted .plan__price {
-    color:white;
+    color:#0e4f1f;
 }
+
+.plan__highlighted:hover .plan__price {
+    color:black;
+    background-color: yellow;
+    box-shadow: 2px 2px 12px 2px rgba(2, 2, 2, 0.88);
+    transition-delay: 600ms;
+    transition: .75s all;
+}
+
+.plan__highlighted .plan__title {
+    color: white;
+}
+
+
 .plan__features {
     list-style: none; 
     margin: 0;
