@@ -76,8 +76,7 @@ body {
 .main-footer {
     background: black;
     margin-top: 48px;
-    padding: 32px;
-    
+    padding: 32px
 }
 
 .main-footer__links {
@@ -102,7 +101,8 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     cursor: pointer;
-    color: #ccc;
+    color:yellowgreen;
+    background-color: black;
     text-decoration: underline ;
     transition-delay: 600ms;
     transition: .75s all
