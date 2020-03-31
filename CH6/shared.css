@@ -16,6 +16,13 @@ body {
     left: 0;
 }
 
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
@@ -69,6 +76,7 @@ body {
     color: #ff1b68;
     background: white;
     border: none;
+    border-radius: 8px;
     transition-delay: 600ms;
     transition: .75s all}
 

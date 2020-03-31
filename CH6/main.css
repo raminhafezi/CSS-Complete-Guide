@@ -7,13 +7,6 @@ body {
     margin: 0;
 }
 
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-}
-
 #product-overview {
     background-image: url("big_merino.jpg");
     background-size: cover;
@@ -35,7 +28,7 @@ body {
 .plan {
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
+    padding: 16p;
     margin: 8px;
     display: inline-block;
     width: 30%;
@@ -69,7 +62,7 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
     outline: none;
     transition-delay: 600ms;
-    transition: .75s all
+    transition: .75s all;
     } 
 .plan__annotation {
     background: white;
@@ -103,11 +96,7 @@ body {
     background: white;   
     color: #19b84c;
     transition: .75s all;
-    transition-delay: 600ms    
-}
-
-.plan__highlighted .plan__title {
-    color: white;
+    transition-delay: 600ms;
 }
 
 .plan__highlighted:hover .plan__annotation {
@@ -116,6 +105,7 @@ body {
     transition:.75s all;
     transition-delay: 600ms;
 }
+
 
 .plan__features {
     list-style: none; 

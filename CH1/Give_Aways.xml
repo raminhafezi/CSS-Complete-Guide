@@ -261,3 +261,22 @@
         color: #ff1b68;
         background: white;
     }
+
+
+21- Every element/tags in html is a border-box. it means it surrounded with within a box and has these properties around them
+    1- Padding
+    2- Border
+    3- Outline
+    4- Margin
+
+
+        Featured snippet from the web
+        The outline property in CSS draws a line around the outside of an element. It's similar to border except that: 
+        1- It always goes around all the sides, you can’t specify particular sides
+        2- It’s not a part of the box model, so it won’t effect the position of the element or adjacent elements
+
+        It is often used for accessibility reasons, to emphasize a link when tabbed to without affecting positioning 
+        and in a different way than hover.
+
+
+        
