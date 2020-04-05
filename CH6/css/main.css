@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+#product-overview {
+    background-image: url("../media/images/big_merino.jpg");
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    height: 528px ;   
+    padding: 10px;
+    position: relative;
+    margin-top: 43px;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', 'sans-serif';
+    position: absolute;
+    top: 85%;
+}
+
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16p;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan:hover,
+.plan:focus,
+.plan:active,
+.plan:focus {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.88);
+    outline: none;
+}
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.plan__highlighted {
+    background: #19b84c;   
+    color: white;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.49);
+    border-radius: 6px;
+}
+.plan__highlighted:focus, 
+.plan__highlighted:active, 
+.plan__highlighted:visited
+{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
+    outline: none;
+    transition-delay: 300ms;
+    transition: .5s all;
+    } 
+.plan__annotation {
+    background: white;
+    color: #19b84c;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.plan__title {
+    color: #0e4f1f;
+}
+
+.plan__price {
+    color:#858585;
+
+}
+.plan__highlighted .plan__price {
+    color:#0e4f1f;
+}
+
+.plan__highlighted:hover .plan__price {
+    color:black;
+    background-color: yellow;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px 2px rgba(2, 2, 2, 0.88);
+    transition: .5s all;
+    transition-delay: 300ms;
+    display: inline;    
+    padding: 4px 8px;
+}
+
+.plan__highlighted:hover {
+    background: white;   
+    color: #19b84c;
+    transition: .5s all;
+    transition-delay: 300ms;
+}
+
+.plan__highlighted:hover .plan__annotation {
+    background:#19b84c;
+    color: white;
+    transition:.5s all;
+    transition-delay: 300ms;
+}
+
+
+.plan__features {
+    list-style: none; 
+    margin: 0;
+    padding: 0;  
+}
+
+.plan_feature {
+    margin: 15px 0px ;
+}
+
+
+
+#key-features {
+    background: #ff1b68;
+    margin: 6px 0px;
+}
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.key-features__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid black;
+    border-radius: 75%;
+    margin: auto;
+}
+/* #key-features li {
+    display: inline-block;
+    text-align:center;
+    margin: 0px 5px;
+} */
+
+
+.h3 {
+    padding: 3px;
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+.here_is_additional_secion {
+    color: none;
+}
+
+div>span>p {
+    color: blue;
+}
+
+div>ul {
+    background: #6671cf;
+    padding: 4px;
+    margin: 2px;
+}
+
+.orderList {
+    width: 20%;
+}

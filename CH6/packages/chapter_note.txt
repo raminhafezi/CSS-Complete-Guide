@@ -1,0 +1,82 @@
+Box-sizing:
+    1- content-box, is the default value for box-sizing, if you set your element box-sizing to content-box (which is a default) so when you define your width and heigh, 
+                    you are styling the content of the box
+    2- border-box, with this value, you are styling the whole box, I mean with the height and width addressing, you are addressin content,
+                    padding, border, as well as margin of your element.
+
+                    The box-sizing property allows us to include the padding and border in an element's total width and height. 
+                    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: 
+
+                    
+
+Video # 84 
+    - Backgrounds and Images
+    We will cover:
+        1- Background Properties
+        2- Images and Background Images
+        3- Gradiants
+        4- Filters
+
+    1- Background Properties
+        - background-image: to set image url
+        - background-size: Xpx Ypx or X% Y% or auto Y% or auto auto or 
+            - Background-size: cover take the entire provided space
+            - Background-size: contain shows the full image in the space, might show some blank
+                                       space around the image if it couldnot fit into the space.
+
+    2- Background-position:
+        The background-position property in CSS allows you to move a background image (or gradient) around 
+        within its container.
+    
+
+        It has three different types of values:
+
+            Length values (e.g. 100px 5px)
+            Percentages (e.g. 100% 5%)
+            Keywords (e.g. top right)
+            
+            - The default values are 0 0. This places your background image at the top left of the container.
+            
+            - Length values:
+                pretty simple: the first value is the horizontal position, second value is the vertical position. 
+                So 100px 5px will move the image 100px to the right and five pixels down. You can set length values in px, 
+                em, or any of the other CSS length values.
+            
+            - Percentages:
+                work a little differently. moving a background image by X% means it will align the X% point in the 
+                image to the X% point in the container. For example, 50% means it will align the middle of the image with the middle 
+                of the container. 100% means it will align the last pixel of the image with the last pixel of the container, and so on.
+
+                default value is 50%, so by defining 50% 50% nothing change. what actually means 50% ?
+                    background-position: 0% 50% : 50% means: from the part of the image that will not fit into the container, 50% cut from the top and 50% cut from the bottom
+                    background-position: 0% 10% means: from part of the image that did not fit into the container, 10% will be cut from the top and the rest
+                                         will be cut from the bottom. so image move down, cause more parts of the image cut from the bottom
+                    background-position: 0% 200% : means all cut from the top and not from the bottom, so image move up and end of the image will be perfectly
+                                         alligned with the bottom of the container
+
+
+            - Keywords are just shortcuts for percentages. It's easier to remember and write top right than 100% 0, and that's why 
+                keywords are a thing. Here is a list of all five keywords and their equivalent values:
+
+                defailt value is the center, the same as 50% 50% 
+                or left top is the same as 0% 0%
+                
+                top: 0% vertically
+                right: 100% horizontally
+                bottom: 100% vertically
+                left: 0% horizontally
+                center: 50% horizontally if horizontal isn't already defined. If it is then this is applied vertically.
+
+                order of the keywords does not matter, top right is the same as right top
+
+                source: https://css-tricks.com/almanac/properties/b/background-position/
+
+
+
+Video # 88
+     
+
+
+
+
+
