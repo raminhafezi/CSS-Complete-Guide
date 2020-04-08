@@ -6,8 +6,7 @@ Box-sizing:
 
                     The box-sizing property allows us to include the padding and border in an element's total width and height. 
                     If you set box-sizing: border-box; on an element, padding and border are included in the width and height: 
-
-                    
+     
 
 Video # 84 
     - Backgrounds and Images
@@ -15,7 +14,7 @@ Video # 84
         1- Background Properties
         2- Images and Background Images
         3- Gradiants
-        4- Filters
+        4- Filters 
 
     1- Background Properties
         - background-image: to set image url
