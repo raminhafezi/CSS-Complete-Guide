@@ -22,11 +22,9 @@
 .country-item:active {
     box-shadow:lightsalmon;
     border: 2px solid hsla(0, 100%, 50%, 0.56);
-    background-color: hsla(74, 100%, 59%, 0.63);
-    -moz-transform: translateY(0.2em);
-    -moz-transition: 500ms;
+    background-color: hsla(74, 100%, 59%, 0.63);   
+    transition: all 500ms ease;
     transform: translateY(0.2em);
-    transition: 500ms;
     border-radius: 0.35em;
 }
 

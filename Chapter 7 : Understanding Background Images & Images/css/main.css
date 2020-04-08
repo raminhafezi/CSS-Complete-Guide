@@ -9,13 +9,14 @@ body {
 
 #product-overview {
     background-image: url("../media/images/big_merino.jpg");
-    background-size: cover;
-    background-position: 0% 0%;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     height: 528px ;   
     padding: 10px;
-    position: relative;
     margin-top: 43px;
+    position: relative;
 }
 
 #product-overview h1 {
@@ -62,7 +63,7 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
     outline: none;
     transition-delay: 300ms;
-    transition: .5s all;
+    transition: all .5s ease;
     } 
 .plan__annotation {
     background: white;
@@ -90,7 +91,7 @@ body {
     background-color: yellow;
     border-radius: 6px;
     box-shadow: 2px 2px 12px 2px rgba(2, 2, 2, 0.88);
-    transition: .5s all;
+    transition: all 500ms ease;
     transition-delay: 300ms;
     display: inline;    
     padding: 4px 8px;
@@ -99,20 +100,20 @@ body {
 .plan__highlighted:hover {
     background: white;   
     color: #032e11;
-    transition: .5s all;
+    transition: all 500ms ease;
     transition-delay: 300ms;
 }
 
 .plan__highlighted:hover .button {
     color: yellow;
-    transition:.5s all;
+    transition: all 500ms ease;
     transition-delay: 600ms;    
 }
 
 .plan__highlighted:hover .plan__annotation {
     background:#19b84c;
     color: white;
-    transition:.5s all;
+    transition: all 500ms ease;
     transition-delay: 300ms;
 }
 
