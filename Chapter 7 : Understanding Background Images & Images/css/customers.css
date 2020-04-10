@@ -1,98 +1,70 @@
-main {
-    padding-top: 34px;
-}
-
-.background {
-    position:fixed;
-    background-image : url("https://image.shutterstock.com/image-photo/friendly-woman-working-call-center-600w-104304311.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    width: 75%;
-    height: 100%;
-}
-
-.package {
-    background: #2ddf5c;
-    display: block;
-    width: 80%;
-    margin: 16px 0;    
-    border: 4px solid #0e4f1f;
-    border-left: none;
-    position: relative;
-}
-
-.package__badge {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    margin: 20px;
-    font-size: 12px;
-    color: white;
-    background-color: #ff5454;
-    padding: 8px;
-}
-
-
-.package:hover,
-.package:focus,
-.package:active {
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-    border-color: #ff5454;
-}
-
-
-.package a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    padding: 32px;
-}
-
-
-.package__subtitle {
-    color: #979797;
-}
-
-
-.package__info {
-    padding: 16px;
-    border: 1px solid #0e4f1f ;
+.testimonial {
     font-size: 20px;
-    color: #0e4f1f;
-    background: white;
+    margin: 48px 0;
+  }
+  
+.testimonial__list {
+  width: 80%;
+  margin: auto;
 }
 
-#PLUS {
-    background: rgba( 213, 255, 220, 0.95);
+.testimonial:first-of-type {
+  margin-top: 96px;
+
+
+}.testimonial__image-container {
+    width: 55%;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 8px 8px 8px 4px rgba(0,0,0,0.6);
 }
 
-#FREE {
-    background: rgba( 234, 252, 237, 0.95);
-    float: right;
-    border-right: none;
-    border-left:  4px solid #0e4f1f ;
-    text-align: right;
+.testimonial__image{
+    display: inline-block;
+    width: 100%;
+    display: block; /*to remove the box shadow on the bottom of the image */
+    vertical-align: top;
 }
 
-#FREE:hover,
-#FREE:focus {
-    border-left-color: #ff5454;
+
+.testimonial__info {
+  text-align: right;
+  padding: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
 }
 
-.clear_fix {
-    clear: both;
+#customer-2.testimonial {
+  text-align: right;
 }
 
-#PREMIUM {
-    background: rgba( 14, 79, 31, 0.95);
+#customer-2 .testimonial__info {
+  text-align: left;
 }
 
-#PREMIUM .package__title {
-    color: white;
+.testimonial__name {
+  margin: 3px;
+  color: hsla(0, 100%, 62%, 0.85);
 }
 
-#PREMIUM .package__subtitle {
-    color: #bbb;
+.testimonial__subtitle {
+  margin: 0;
+  font-size: 18px;
+  color: #ccc;
 }
+
+.testimonial__subtitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.testimonial__subtitle a:hover,
+.testimonial__subtitle a:active {
+  color: #7a7a7a;
+}
+
+.testimonial__text {
+  margin: 3px;
+}
+

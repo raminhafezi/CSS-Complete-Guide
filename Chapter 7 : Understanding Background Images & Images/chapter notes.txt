@@ -1,0 +1,93 @@
+video 88:
+
+    background-origin:
+        The background-origin property is used to determine how the background-position of a background in a certain box is calculated.
+        It takes three different values, border-box, padding-box and content-box. When you supply a value of padding-box, the position 
+        is relative to the upper left corner of the padding edge. With border-box it’s relative to the upper left corner of the border, 
+        and content-box means the background is started from the upper left corner of the content 
+        
+        border-box:  background-position start from upper left side of the container, include border box
+        padding box: background-position start from upper left side of the container, include padding box
+        content-box: background-position start from upper left side of the container, exclude it's padding box and fixed
+                     into it's container box
+
+
+    background-clip:
+        The background-clip property is used to determine whether the backgrounds extends into the border or not. 
+                The default is border-box, which means it DOES extend into it
+            border-box
+            padding-box
+            content-box
+
+    source: http://www.css3.info/preview/background-origin-and-background-clip/
+
+
+video 89:
+    you can summarize yoiur background attribute into one line
+        position: fixed;
+    
+    background-image : url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=code-coding-conceptual-270360.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: left 10% bottom 20%;
+    width: 100%;
+    height: 100%;
+
+    can be summarize into
+    background: url(" .. ") left 10% bottom 20%/cover no-repeat border-box;
+
+video 90:
+    in the image when you set width and height to 100%, it does not fit into it's container width and height, it simple means 
+    image size, and might destroy your container and design.
+
+    so its not a good idea to use % in the img css file, better to use em or px
+
+    good source for auto generate css filter to change color of the logo
+    Source: https://codepen.io/sosuke/pen/Pjoqqp
+
+video 91:
+    working on customer page:
+
+    
+video 92:
+    for putting two elements into one line, we can use the combination of display and width
+        for example in the customer page, we have a div class with testimonial__image-container, this div hold an image
+        and also we have another div right after the above div with some text,
+        so, if we want to put these two html elements into one line, we assign display: inline-block in both, then we set width 70%
+        in the first div and 20% in the second div, with these trick we can put these two elements into one line. to make it more eye catching, we also set 
+        vertical-align: middle
+
+        html
+            <div class="image__container">
+                <img src="...." >
+            </div>
+
+            <div class="testimonal__container>
+                <h1> name of the person is:</h1>
+                <h2> He is a CEO of ........? </h2>
+            </div>
+            .
+            .
+            .
+        CSS 
+            .image__container {
+                display: inline-block;
+                width: 70%
+            }
+
+            .testimonial__container {
+                display: inline-block;
+                width: 20%;
+            }
+
+video 95:
+    talks about how to stack up multiple background, we can use gradiant and the html acts it as an image,
+    we can use images and gradiant as a background to make some how a filter to our background image, 
+    make it blurish or change add some visual effect
+
+video 96:
+    talks about the filter in the CSS grayscale, opacity, .....
+
+    

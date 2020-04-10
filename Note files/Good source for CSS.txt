@@ -7,3 +7,6 @@
 
 3- Background Gradiant
     Source: https://codepen.io/TheCSSKing/pen/VwwRzgg
+
+4- change your image/logo color with CSS filter, Auto generate css filter such as saturate, hue, contrast, sepia
+    Source: https://codepen.io/sosuke/pen/Pjoqqp

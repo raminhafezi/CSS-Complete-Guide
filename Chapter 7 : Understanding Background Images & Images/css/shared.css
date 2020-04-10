@@ -14,6 +14,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .main-header__brand {
@@ -21,6 +22,12 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+}
+
+.main-header__brand img {
+    height: 100%;
+    width: 30px;
+    filter: invert(69%) sepia(89%) saturate(437%) hue-rotate(74deg) brightness(92%) contrast(89%);
 }
 
 .main-header > div {
