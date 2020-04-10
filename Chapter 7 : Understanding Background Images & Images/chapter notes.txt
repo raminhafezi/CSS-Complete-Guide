@@ -90,4 +90,12 @@ video 95:
 video 96:
     talks about the filter in the CSS grayscale, opacity, .....
 
-    
+
+
+Video 97:
+    You can use SVG icon to your html page and it is the fastest icon/image that download lowest possible size.
+    also you can change the color of the icon with htlm attributes. 
+
+    you can select individual part of the svg icon. So, if you have svg, use it
+
+    we have come features for the svg image, we can set stroke and stroke-width into the css file to change our svg image a little bit

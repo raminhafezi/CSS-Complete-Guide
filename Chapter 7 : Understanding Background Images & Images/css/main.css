@@ -154,7 +154,7 @@ body {
 
 .key-feature {
     display: inline-block;
-    width: 30%;
+    width: 22%;
     vertical-align: top;
 }
 
@@ -169,8 +169,11 @@ body {
     width: 128px;
     height: 128px;
     border: 2px solid black;
-    border-radius: 75%;
+    border-radius: 50%;
     margin: auto;
+    padding: 20px;
+    stroke: black;
+    stroke-width: 4px;
 }
 /* #key-features li {
     display: inline-block;
