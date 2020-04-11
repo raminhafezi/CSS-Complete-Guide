@@ -1,4 +1,4 @@
-video 101:
+video 101 - 107><<:
     we have different units to use in CSS
 
         1- pixel: px
@@ -32,10 +32,20 @@ video 101:
             does this % related to body element, wrapper element, viewport, .... ? how about box height and box width in terms of 
             % ? how  they calculated?
 
-    3 rules to rememberm
-        Rule 1: 
-            if the containing block has a fixed position (position:fixed) then child element see the containing bloxk as a view port.
+    3 rules to remember when you want to assign percentage unit to your element.
 
+        Rule I: 
+            if the containing block has a fixed position (position:fixed) then child element see the containing bloxk as a view port.
+            so assigning the percentage unit to your element, simply means percentage of the viewport.
+
+        Rule II:
+            if the element has a position: absolute then the container block is the closest ancestor with a positon absolute, relative, 
+            fixed and sticky (anything without position: static) and it refers to the ancesor content plus padding.
+            it means percentage unit to your element, calculated percentage size of the ancestor content+padding.
+
+        Rule III:
+            if your element that you want to assign percentage unit to it, has a static or relative position, then the size
+            calculated based on the size of the ancesor content.
             
 
 
