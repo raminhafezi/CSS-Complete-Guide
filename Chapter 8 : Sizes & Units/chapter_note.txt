@@ -1,0 +1,45 @@
+video 101:
+    we have different units to use in CSS
+
+        1- pixel: px
+        2- percentage: %
+        3- root em: rem
+        4- em: em
+        5- viewport height: vh
+        6- viewport width: vw
+
+    if we think that each html has a content, then we have a padding, margin, borde,..
+    so, we have font-size for the content, we have padding, boarder, as well as margin.
+    then we have width and height of our html tag,
+    last we have another 4 attribute that we cab assign the units to them, top, bottom, left, and right.
+    so in total, we have 10 attributes for each hatmk tag to assign units to them. 
+    Please rememberm display: border-box is we want to assign width and height.
+
+    How is the size calculated?
+        we have 4 categories in terms of size calculation.
+
+        1- Absolute Lengths: mostly ignore user setting.
+            - px
+        2- Viewport Length: Adjust to current viewport
+            - vh
+            - vw
+            - vmin
+            - vmax
+        3- Font-Relative Lengths: adjust to default size
+            - rem
+            - em
+        4- %  --- Special case
+            does this % related to body element, wrapper element, viewport, .... ? how about box height and box width in terms of 
+            % ? how  they calculated?
+
+    3 rules to rememberm
+        Rule 1: 
+            if the containing block has a fixed position (position:fixed) then child element see the containing bloxk as a view port.
+
+            
+
+
+
+
+
+
