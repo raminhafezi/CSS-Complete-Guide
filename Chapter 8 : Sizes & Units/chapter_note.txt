@@ -117,7 +117,19 @@ video 115:
     we can use auto for the margin, like what we have in the plan__list css class, when we want to align some html element(s)
     at the center of the page, we cans et margin to auto, so the browser aligns the elements into the middle of the scree,
 
+
+video 116: 
+    summary of these units, good tips.
+    - if you want 100% of the height apply position fixed/absolute or using the viewport units (vw, vh)
+    - if the element itself or the ancestors use position static/relative then 100% height is not working,
+      simple solution is to add 100% height to all ancestors to fix this issue.
     
+    - if you want to use min or max (width), you also have to mention width size such as 
+        width: 55%;
+        max-width: 580px;
+        min-width: 250px;
+
+        
 
 
 
