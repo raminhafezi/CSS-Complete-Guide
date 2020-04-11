@@ -47,6 +47,44 @@ video 101 - 107><<:
             if your element that you want to assign percentage unit to it, has a static or relative position, then the size
             calculated based on the size of the ancesor content.
             
+video 108:
+    if you want to fix your image size, you can set the size: 50%, so yoiur image takes 50% of its container block element.
+        the problem is, when user expand theeir browser width, the image also get bigger, because image wants to take 
+        50% of its container,(probably the viewport). 
+        A simple solution to this behaviour, is to set max-width, so the image would not get bigger on the large screen.
+        and stopped to the defined pixcel on the max-width.
+
+        so, with the combination of the max and min widthm with the width value we are in a safe side.
+
+
+------------Font Size-------------
+
+video 109:
+    rem and em is the unit relative to the font size.
+    if an element have specific font size defined for it in it's css, then the font size will be applied,
+    othrewise,  css look at the element container, and based on the container setting, applied the font size to
+    the element, it usually written in 2em, means twice the size of 1 em which is 16px.
+    you can see it if you inspect elemetn, then click on the "compute" tab, and uncheck "show all" and expand font section.
+
+    so basically, we can define all our font size based on the em,
+
+    Problem with em:
+        if we use em for the font size throughout our html page, the problem is two neighbour elements can get inheritance 
+        of the font size, then multiple their font size by the parent and the em, and make a mess. Siomple using em for 
+        every html element, can get the page design out of our control.
+        A simple solutiono to this problem is using rem, rem means root em or font of our root/html and then multiple it 
+        by what we design. so 
+        
+        1.2 rem means root(html) font size X 1.2
+        1.2 em means container font size X 1.2
+
+        so with the rem, we have full control of the font-size in our website.
+        downside of the rem, is old browser does not support rem.
+
+        
+
+
+
 
 
 
