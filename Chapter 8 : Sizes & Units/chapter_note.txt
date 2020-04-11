@@ -100,6 +100,26 @@ video 112:
         }
 
 
+video 113:
+    the author recommend to use this property 
+    
+    - font-size for the root element -> %
+    - font-size -> rem / or we can use em for the child only. becarefult it can get out of control easily
+
+    - padding, margin -> rem
+    - border -> px
+
+    - width, height -> %, vh, vw or px
+    - top, bottom -> %
+    - left, right -> %
+
+video 115:
+    we can use auto for the margin, like what we have in the plan__list css class, when we want to align some html element(s)
+    at the center of the page, we cans et margin to auto, so the browser aligns the elements into the middle of the scree,
+
+    
+
+
 
 
 
