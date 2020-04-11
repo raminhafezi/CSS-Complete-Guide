@@ -81,7 +81,23 @@ video 109:
         so with the rem, we have full control of the font-size in our website.
         downside of the rem, is old browser does not support rem.
 
-        
+video 110:
+    we can use rem for the margin as well. keep in mind, the rem refer to the font size of the html. for exmample if the user
+    change the setting of the web-broswer font from medium to x large, then the rem also will be change, cause root now means html
+    that has x large fize
+
+video 112:
+    if you want to set the size of an element to the entire page, we can use viewpoint height and viewpoint width
+    example:
+        .backdrop {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color= rgba(0,0,0,0.25;)
+        }
 
 
 
