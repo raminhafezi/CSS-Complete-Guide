@@ -1,0 +1,3 @@
+video 118: 
+    we want to manipulate the css file with the javascript, load, unload, or change the css file with javascript
+    we create a modalinto our main index file. right after div with backdrop class
