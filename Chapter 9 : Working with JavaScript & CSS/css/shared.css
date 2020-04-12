@@ -222,3 +222,7 @@ body {
     transition-delay: 600ms;
     transition: .75s all
 }
+
+.open {
+    display: block !important;
+}

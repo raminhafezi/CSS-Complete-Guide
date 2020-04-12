@@ -26,3 +26,22 @@ video 121:
     we also add toggle bar before the website logo on the top left corner.
     we will work on the click eventlister of the toggle bar
 
+video 124:
+    - we can use javascript to change many features in the CSS 
+    - keep in mind we have slightly different name rule in CSS and Javascript. 
+        - for Exam[le in the 
+            css we have background-image]
+            javascript we have backgroundImage
+
+            css we have margin-top
+            javascript we have marginTop
+
+    - there are two ways toa ccess the css class in javascript
+        1- cssClassName.style['css features name like background-image'] we pass css features name as a string
+        2- cssClassName.style.backgroundImage we use javaScript file naming in here to access css features. backgroundImage vs background-image
+
+video 125:
+    -adding burger icon and javascript into customers, packages, and start-hosting page. Then fixing issue of eventLister not finding by fixing
+    our javascript code. All working now, with mobile navigation, toggle, and eventListener on all pages.
+
+    
