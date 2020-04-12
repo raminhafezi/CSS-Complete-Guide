@@ -13,5 +13,16 @@ video 120:
     add event listener to the buttons of the div element with plan class
     now when user click on the button, a modal and backdrop display changes from none, to block
     so user can see a greyish bacground with the modal pop up window, ask for continue or not
+
     
-     
+video 121:
+    adding side navigation bar, 
+    whenever user click on the site icon on the top left corner of the paeg, a side navigation abr should be display,
+    cause at the moment, when the width decresae our site will looks ugly, and we need side navigation later on when
+    we talk about the responsve design
+
+    we add javascript file, with some queryselector to change display fetures of the backdrop and modal,
+    we add eventlistener.
+    we also add toggle bar before the website logo on the top left corner.
+    we will work on the click eventlister of the toggle bar
+
