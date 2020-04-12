@@ -10,3 +10,7 @@
 
 4- change your image/logo color with CSS filter, Auto generate css filter such as saturate, hue, contrast, sepia
     Source: https://codepen.io/sosuke/pen/Pjoqqp
+
+5- compare the actual pixcel and size of different mobile devices, good to use when trying to make website responsive
+    Source: https://www.mydevice.io/#compare-devices
+    - go to compare devices section on this page, 

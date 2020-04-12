@@ -44,4 +44,8 @@ video 125:
     -adding burger icon and javascript into customers, packages, and start-hosting page. Then fixing issue of eventLister not finding by fixing
     our javascript code. All working now, with mobile navigation, toggle, and eventListener on all pages.
 
+
+ video 126:
+    wrapup this module and moving forward to the next module.
     
+       

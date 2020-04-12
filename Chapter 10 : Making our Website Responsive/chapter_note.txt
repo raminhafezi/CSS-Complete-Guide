@@ -1,0 +1,24 @@
+video 127: 
+    - we will work on responsive design in this module.
+
+    www.mydevice.io
+        these website listed the actual pixcel and size of the different mobile screen
+
+
+    - the problem with our website so far is, our website can not recognize the actual device width and height,
+        in mobile device we have a pixel to inch ratio. for example in the iphone 8, the pixcel to inch ratio is 2.
+        that means the 750 pixcel width of the iphone, convert to 375 pixcel. 
+        so our website act the same if it opened in the desktop, a lapop, or a mobile device. in order to tell 
+        our website to recognize the actual software(not harware) size of the device screen we need to add a meta 
+        tag to our html head section.
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+video 130:
+    - media queries and viewport.
+        - we need viewport meta tag in our html pages to tell us what is the actual pixel of the device,
+        - we also need media queries in our css file, so we can adjust style that need to apply to our html tag
+            our website style should be dynamically changes bsed on the user device, an style for the desktop, and another style
+            for the mobile device with smaller screen.
+
+            
