@@ -1,3 +1,17 @@
 video 118: 
     we want to manipulate the css file with the javascript, load, unload, or change the css file with javascript
     we create a modalinto our main index file. right after div with backdrop class
+
+    we have backdrop and the modal with the css class display: none,
+    when a user click on the "start hsoting" tab, we want to show a backdrop (grayish backgroun over the background)
+    and then display a pop up modal, to ask user if they want to continue to the start hosting page or not,
+    so if user click on the "start hsoting" tab, we need a javascript class to dynamicly change the modal and backdrop css class
+     display: none feature.
+
+video 120:
+    add javascript code to the project for selecting modal and backdrop 
+    add event listener to the buttons of the div element with plan class
+    now when user click on the button, a modal and backdrop display changes from none, to block
+    so user can see a greyish bacground with the modal pop up window, ask for continue or not
+    
+     
