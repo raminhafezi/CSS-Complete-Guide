@@ -14,3 +14,10 @@
 5- compare the actual pixcel and size of different mobile devices, good to use when trying to make website responsive
     Source: https://www.mydevice.io/#compare-devices
     - go to compare devices section on this page, 
+
+6- vey good books for learning CSS tricks by mentioning problems and solutions.
+    Source: https://learning.oreilly.com/library/view/css-secrets/9781449372736/ch08.html
+
+7- Good to know as much as we can about JAMstack
+    Source: https://snipcart.com/blog/jamstack
+    - good to read and follow the learning path
