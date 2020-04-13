@@ -21,4 +21,34 @@ video 130:
             our website style should be dynamically changes bsed on the user device, an style for the desktop, and another style
             for the mobile device with smaller screen.
 
-            
+
+video 131: 
+    - other options that we have on viewport meta tag in our head element are:
+        - user-scalable: can get yes or no attribute, let user on mobile device zoom-in & out
+        - maximum-scale: restrict maximum zoom level ex: maximum-scale=2.4
+        - minimum-scale: obvious
+
+video 134:
+    - in the mobile first website design, we usually code al my css file for the mobile screen,
+        then we use @media for adjusting our style for the desktop screen. so we usually, use @media (max-width: 40rem) {......}
+    - we can have more than media query in the same css file. not a problme. but be indfult hat the css file compile from top to bottom
+        so if we have something like
+            - @media (min-width: 40ram) {font-size: 16rem} and then again undeneath it we have another 
+            - @media (min-width: 50rem) {font-size: 20rem}
+        then as soon as our page width reach 50rem font size will be change to 20 and there is not way we can get it back to 16
+        bacause css file would not compile again 
+
+ Video 135:
+    - the best way to palce media queries is at the end of your css file, after all style features. so simply find it and manipulate it later on.
+
+
+Video 139:
+    - we can use combinator in our media query. something like 
+        - @media (min-width: 30rem) and (min-height: 60rem)  and (orientaion: landscape) {
+            ... style in here will be applied if both conditions were met.
+        }
+        '
+        -@media (condition 1) , (condition 2) {
+            ... style in here will be applied if one of conditioon 1 or 2 was met
+        }
+

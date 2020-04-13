@@ -13,15 +13,11 @@ body {
     background-clip: border-box;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 33vh;
     margin-top: 2.75rem;
     position: relative;
-
-    -moz-background-clip: border-box;
-    -moz-background-origin: border-box;
-    -webkit-background-clip: border-box;
-    -webkit-background-origin: border-box;
 }
 
 #product-overview h1 {
@@ -30,17 +26,31 @@ body {
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size:1.5rem;
 }
+
+@media (min-width: 40rem) and (orientation: portrait) {
+    #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+
 
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 8px;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    margin: 0.5rem 0;
+    width: 100%;
 }
+
 
 .plan:hover,
 .plan:focus,
@@ -50,16 +60,10 @@ body {
     outline: none;
 }
 
-.plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
 
 .plan__highlighted {
     background: #19b84c;   
     color: white;
-    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.49);
     border-radius: 6px;
 }
 .plan__highlighted:focus, 
@@ -134,7 +138,23 @@ body {
     margin: 15px 0px ;
 }
 
-
+@media (min-width: 40rem) and (orientation: landscape) {
+    .plan__list {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+    .plan {
+        display: inline-block;
+        width: 30%;
+        margin: 0.5rem 0.2rem;
+        min-width: 13rem;
+        max-width: 22rem;
+    }
+    .plan__highlighted {
+            box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.49);
+    }
+}
 
 #key-features {
     background: #ff1b68;
@@ -186,14 +206,6 @@ body {
     padding: 0.25rem;
 }
 
-.section-title {
-    color: #2ddf5c;
-    text-align: center;
-}
-
-.here_is_additional_secion {
-    color: none;
-}
 
 div>span>p {
     color: blue;
