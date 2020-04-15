@@ -52,3 +52,7 @@ Video 139:
             ... style in here will be applied if one of conditioon 1 or 2 was met
         }
 
+Video 140-145:
+    working on some modification in css file, @media, vafrialble to make website more responsive.
+
+    End of chapter 10

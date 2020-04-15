@@ -16,7 +16,7 @@ body {
     background-position: center;
     width: 100vw;
     height: 33vh;
-    margin-top: 2.75rem;
+    /* margin-top: 2.75rem; */
     position: relative;
 }
 
@@ -171,6 +171,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
 }
 
 
@@ -181,9 +182,6 @@ body {
         width: 22%;
         vertical-align: top;
         list-style: none;
-    }
-    .key-features__list {
-        list-style-type: none;
     }
 }
 
