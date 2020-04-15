@@ -158,11 +158,12 @@ body {
 
 #key-features {
     background: #ff1b68;
-    margin: 6px 0px;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 #key-features .section-title {
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-features__list {
@@ -172,11 +173,20 @@ body {
     text-align: center;
 }
 
-.key-feature {
-    display: inline-block;
-    width: 22%;
-    vertical-align: top;
+
+
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        width: 22%;
+        vertical-align: top;
+        list-style: none;
+    }
+    .key-features__list {
+        list-style-type: none;
+    }
 }
+
 
 .key-feature__description {
     text-align: center;

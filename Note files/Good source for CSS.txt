@@ -18,6 +18,16 @@
 6- vey good books for learning CSS tricks by mentioning problems and solutions.
     Source: https://learning.oreilly.com/library/view/css-secrets/9781449372736/ch08.html
 
-7- Good to know as much as we can about JAMstack
+7- Good source of the CSS reference with animation and search
+    Source: https://cssreference.io/
+
+8- Good for learning CSS and html
+    -Source: https://marksheet.io/
+    - I find it via alexa site ranking website, good ranking and probably is a source for many developers
+    
+9- Good to know as much as we can about JAMstack
     Source: https://snipcart.com/blog/jamstack
     - good to read and follow the learning path
+
+10- Good source for adding some effect on the text via three.js library    
+    Source: https://tympanus.net/codrops/category/tutorials/
