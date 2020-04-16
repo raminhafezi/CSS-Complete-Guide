@@ -7,10 +7,8 @@ var modalYesButton = document.querySelector(".modal__action");
 var selectPlanButton = document.querySelectorAll('.plan button');
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector('.mobile-nav');
-
-// var mobileNavDisplay = document.querySelector(".main-header__brand img");
-
-// console.log(mobileNavDisplay)
+var button = document.querySelector(".button");
+var checkBox = document.getElementById("agree-terms");
 
 for (var i = 0; i < selectPlanButton.length; i++) {
     selectPlanButton[i].addEventListener('click', function () {
@@ -33,6 +31,24 @@ toggleButton.addEventListener('click', function () {
     mobileNav.classList.add('open');
     backdrop.classList.add('open');
 });
+button.addEventListener('click', function () {
+    button.classList.remove("button:disabled")
+})
+
+checkBox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+        enableButton();
+    }
+    else {
+        disableButton();
+    }
+})
+
+button.addEventListener('click', (event) => {
+    console.log(event);
+    console.log("OMG!!!!");
+})
+
 
 // mobileNavDisplay.addEventListener('click', function () {
 //     backdrop.style.display = "block";
@@ -52,4 +68,10 @@ function continueToHostingPage() {
     document.location.href = "start-hosting.html";
 };
 
+function enableButton() {
+    button.disabled = false;
+}
 
+function disableButton() {
+    button.disabled = true;
+}

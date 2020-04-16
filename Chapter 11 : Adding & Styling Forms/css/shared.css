@@ -228,20 +228,19 @@ main {
     padding: 0.5rem;
     border-radius: 9px;
     cursor: pointer;
-}
+    transition-delay: 600ms;
+    transition: .75s all;}
 
 .button:hover,
 .button:active {
     background: white;
     color: #0e4f1f;
     transition-delay: 600ms;
-    transition: .75s all
-}
+    transition: .75s all;}
 .button:focus {
     outline: none;
     transition-delay: 600ms;
-    transition: .75s all
-}
+    transition: .75s all;}
 
 .open {
     display: block !important;

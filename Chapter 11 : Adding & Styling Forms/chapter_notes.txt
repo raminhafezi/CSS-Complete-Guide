@@ -1,0 +1,44 @@
+Video 148:
+    - CSS attribute selector:
+        we can restrict our selection witjin the CSS
+
+        - selector [type="email"] {
+            color: red;
+        }
+
+        - selector [href^="#"] {
+            select all a elements that start with #
+        }
+
+        - selector [href$=".de"] {
+            select all a elements that end with .de
+        }
+
+        - selector [src*="cdn"] {
+            Select all source element that has "cdn" on them, anywhere.
+        }
+
+        - selector [src*="cdn" i] {
+            Select all source element that has "cdn" on them, anywhere.
+            but this time it is case-in-sensitive 
+            it selects cdn or CdN or CDN, ....
+        }
+
+Video 150:
+    - when you focus on an inpur form, if you want to style it, it calls outline.
+     
+Video 151:
+    - when you want to style the drop-dorn or checkbox item, it get the default stylying elements
+        you jhave to disable it or set it to none, if you want your style to appear
+
+        .signup-form input[type"checkbox"] {
+            ......;
+            -webkit-apprearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+Video 153: 
+    - styling the button when it is disabled, 
+    - writing some javascirpt code to trigger submit button by clicking terms-conditions- checkbox
+    - module finish
+    

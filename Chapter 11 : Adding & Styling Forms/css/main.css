@@ -72,8 +72,9 @@ body {
 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
     outline: none;
-    transition-delay: 300ms;
-    transition: all .5s ease;
+    transition-delay: 600ms;
+    transition: .75s all;
+}
     } 
 .plan__annotation {
     background: white;
@@ -110,14 +111,16 @@ body {
 .plan__highlighted:hover {
     background: white;   
     color: #032e11;
-    transition: all 500ms ease;
-    transition-delay: 300ms;
+    transition-delay: 600ms;
+    transition: .75s all;
+}
 }
 
 .plan__highlighted:hover .button {
     color: yellow;
-    transition: all 500ms ease;
-    transition-delay: 600ms;    
+    transition-delay: 600ms;
+    transition: .75s all;
+} 
 }
 
 .plan__highlighted:hover .plan__annotation {
