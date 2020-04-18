@@ -62,7 +62,16 @@ main {
 
 .signup-form input[type="checkbox"]:checked {
     background-color:#2DDF5C;
-    border: #0e4f1f;
+    border-color: #0e4f1f;
+    transition-delay: 600ms;
+    transition: .75s all;
+}
+
+.signup-form :invalid,
+.signup-form input.invalid,
+.signup-form select.invalid {
+    border-color: red;
+    background-color: rgb(211, 169, 169);
     transition-delay: 600ms;
     transition: .75s all;
 }
