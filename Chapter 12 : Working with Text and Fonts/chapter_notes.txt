@@ -1,0 +1,38 @@
+Video 159: 
+    -  we can define font family for the entire page,
+    - body {
+        font-family: "sans-serif, "Montserrat", "Arial";
+    }
+    it means first the user browser looks for sans-serif font, if it can find the font use it, else looks
+        for a Montserrat, if it can find the montserrat font use it, else ....
+        if it cannot find any of the font use the default font that defined for each broser by the user,
+        using default font by the browswr could affects our style.
+
+    - we have:
+        - Default font (simply not set any font style in the CSS or HTML)
+        - Generic font (defined in CSS)
+        - Font family (defined in CSS)
+            = User's computer
+            = Web fonts
+            = retrive from server
+
+Video 160:
+    -  check www.cssfontstack.com website to check which font installed on which system.
+
+Video 161: 
+    - a better approach to use google font is to add the font into the CSS file instead of the html file.
+    - importing the ofnt into the CSS file that is shared betwenn all pages is a best palce to add import font
+    - simple go to the google font website and when you select the font, use "@IMPORT" instead of "STANDARD"
+    - Tjhis method avoid us to make mistakes
+     
+
+    in shared.css
+    {
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+    }
+
+    so I simply remove all font loink from the html pages and add them as an import to the shared.css file
+
+    Video 162:
+        - be mindful if you want to use different font weight, you have to iomport them first,
+        @import url("http://fonts.google ........ family=Montserra : weight@400; 600; 800);

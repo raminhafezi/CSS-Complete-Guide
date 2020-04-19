@@ -65,6 +65,7 @@ main {
     font-size: 1.25rem;
     color: #0e4f1f;
     background: white;
+    font-family: 'Fira Code', monospace;
 }
 
 @media (min-width: 40rem) {

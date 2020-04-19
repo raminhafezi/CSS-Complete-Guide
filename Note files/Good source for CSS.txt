@@ -31,3 +31,7 @@
 
 10- Good source for adding some effect on the text via three.js library    
     Source: https://tympanus.net/codrops/category/tutorials/
+
+11 - Check font that installed on different OS good to know before using fonts as a default on the website
+     Source: https://www.cssfontstack.com/
+     
