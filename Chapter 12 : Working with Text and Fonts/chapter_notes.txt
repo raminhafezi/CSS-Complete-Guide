@@ -33,6 +33,36 @@ Video 161:
 
     so I simply remove all font loink from the html pages and add them as an import to the shared.css file
 
-    Video 162:
-        - be mindful if you want to use different font weight, you have to iomport them first,
+Video 162:
+    - be mindful if you want to use different font weight, you have to iomport them first,
         @import url("http://fonts.google ........ family=Montserra : weight@400; 600; 800);
+
+Video 166:
+    - letter-spacing: pixel or ram space between your text lines.
+    - white-space: nowrap => styling you text into one line and the size of the elements has not impact.
+                   normal => the default
+                   pre    => same style happen as you typed in your html page, spaces, new lines, ,.... will be appleid
+                   pre-wrap => combination of wrapping the text and applying the style from html       
+
+Video 167:
+    -line-height: 1 or 2 or 3 rem or pixel
+                    add space above and bottom of the text lines, keep lines space 
+    the line-height is also related to the font family that we are using.
+
+Video 168:
+    - text-decoration
+        .package-info {
+            ...
+            text-decoration-style: wavy;
+            text-decoration-line: underline ;
+            text-decoration-color: hsla(210, 61%, 35%, 0.66) ;
+        }
+    
+        text-shadow :  X-axis and Y-axis blur-radius and color
+        text-shadow: {
+            2px 4px 0.5px lightskyblue;
+        }
+
+        text-shadow {
+            0px 0px 15px lightskyblue; */ this looks like a highlight text/*
+        }
