@@ -1,0 +1,18 @@
+Video 175:
+    - We have a Flex container
+    - inside Flex container we have Flex Items
+
+    - Parent: 
+        Flex container
+                - display: flex
+                - Flex-flow:
+                - justify-content:
+                - align-content:
+                - align-items:
+    
+    - Children: 
+        Flex Items
+                - order:
+                - flex:
+                - align-self:
+
