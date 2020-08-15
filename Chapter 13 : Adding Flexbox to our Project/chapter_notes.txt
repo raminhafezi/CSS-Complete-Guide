@@ -1,18 +1,154 @@
 Video 175:
-    - We have a Flex container
-    - inside Flex container we have Flex Items
+    as soon as we apply disdplay: flex to an HTML tag element, that tag becomes Flex container and all its children become flex item,
+        - We have a Flex container
+        - inside Flex container we have Flex Items
 
-    - Parent: 
-        Flex container
-                - display: flex
-                - Flex-flow:
-                - justify-content:
-                - align-content:
-                - align-items:
+        - we have Main Axis and Cross Axis.
+
+
+Flex box is a way to change how our elements should displayed in the page:
+
+How to use Felx box: 
+        in the Element: 
+            -display : flex --> that makes our element a Flex container.
+                                so if we set display as flex in an item, item becomes a flex container, and every container needs children. as soon as we set display as Flex, we can set bellow values to the flex container and flex items/children
+
+Properties that can be set to the:
+    - Parent: or  Flex container
+        - display: flex ,  inline-flex
+        - Flex-flow:
+        - justify-content:
+        - align-content:
+        - align-items:
     
-    - Children: 
-        Flex Items
-                - order:
-                - flex:
-                - align-self:
+    - Children: Flex Items
+        - order:
+        - flex:
+        - align-self:
+            
+
+1) Parent: or Flex container
+
+        Display : flex 
+
+                in the normal HTML DOM, elements palced bellow each other,
+                when you set parent element to the flex, then child  elements palced right after each other, and the children also adjust their hight. Also when you resize the page, children try to maintain themselves with the width of the page.
+                also when we set display:flex, we also automatically set two other property values
+                flex-wrap: nowrap, and flex-direction: row
+
+
+        display : inline-flex:
+                Same as display:flex but children does not change their size then apge is resizing. hight would be adjusted with the most talled child.
+
+
+        flex-direction:
+            When you set display:Felx, you automaticaly applied flex-direciton : row
+
+                row:            all items adjust to the left, all take one row, item with
+                                no height, take the maximum height of its neighbours. 
+                                items adjust to the top.
+
+                row-reverse:    first child would be the last child in the row.
+                                all items adjust to the right, all take one row item with
+                                no height, take the maximum height of its neighbours.
+                                items adjust to the top.
+
+                column:         each item takes one row, adjust ot the left, items with
+                                no width take the width of the parent element.
+
+                column-reverse: first child placed on the last row each item takes one row,
+                                adjust to the left, items with no width take the width of the parent element.
+        start
+                nowrap:         display:Felx, you automaticaly applied flex-wrap : nowrap
+            
+                wrap:           when the page resize or child can not be palced next to each
+                                other in one row ont he parent element container, then last childs
+                                will be moved to the next row. All items adjust its height to the top
+                                
+
+                wrap-reverse:   when children can not be placed in one row next to each other,
+                                then last child in the row, will be moved to a new row on the top
+                                all items adjust their hight to the bottom of the container element.
+
+                
+        Main-Axis       when flex-direciton is row, so the "Main-Axis" is from left to right  
+        and             and the "Cross-Axis" is from top to the buttom
+        Cross-Axis      if flex-direction: row-reverse, the "Main-Axis" is from right to left,
+                        and the "Cross-Axis" is from top to the buttom
+
+                        when the flex-direction is column, the "Main-Axis" is from top to buttom
+                        and the "Cross-Axis" si from left to right, in Column-reverse, the 
+                        "Main-Axis" is from buttom to top and "Cross-Axis" from left to right
+
+
+        Align-items:    
+            with the align-items, we move our items along side of the "Cross Axis"
+
+                stretch:        Default value, items with no height, take the height of the parent
+
+                flex-start:     items align to the start of the flex container, Cross Axis.
+                                So if the flex-direction: row, The starting point is from top left corner of the container. Main Axis is from left to right
+                                and Cross Axis od from top to bottom. Align-items moves items across the Cross Axis then flex-start places items to the top left of the container. 
+
+                flex-end:       items align to the end of the flex container Cross Axis.
+                                So if the flex-direction: row, Align-items moves items across the Cross Axis then flex-end places items to the buttom left of the container.  
+                                
+                center:         items align to the center of the flex container Cross Axis, 
+
+                stretch:        items align to the take whole height of flex container Cross Axis
+
+
+
+        justify-content:    
+            with the justify-content, we move our items along side of the "Main Axis"
+
+                stretch:        Default value, items with no height, take the height of the parent
+
+                flex-start:     items align to the start of the flex container, Main Axis.
+                                So if the flex-direction: row, The starting point is from top left corner of the container. Main Axis is from left to right
+                                and Cross Axis od from top to bottom. justify-content moves items across the Main Axis then flex-start move items to the top left of the container. 
+
+                flex-end:       items align to the end of the flex container Main Axis.
+                                So if the flex-direction: row, Align-items moves items across the Main Axis then flex-end places items to the top right of the container.  
+                                
+                center:         items align to the center of the flex container Main Axis, 
+
+                stretch:        items align to the take whole height of flex container Main Axis
+
+                space-evenly:   Across the Main Axis, justify items to have equal space 
+                                in between.
+
+                space-around:
+
+                space-between:  first and last items, stick to the start and end of the main axis.
+                                others have equal space betweem themselves.
+
+            
+        if we have a flex-direction: column, then our Main-axis is from top to buttom and Cross Axis is from left to right. So in this case the justify-content, adjust children across the main axis, which is the column. Then justify-contkey-features__list {ent: flex-end, adjust items to the bottom of the container.
+
+        Sumarry:
+                    with adding display: flex, we also add some default setting. flex-direction: row and flex-wrap: nowrap, and finally align-items and justify-content to stretch.
+                    with flex-direction we can define Main-Axis and Cross-Axis. We can move items across main axis or cross axis with justify-content and align-items. 
+
+
+
+2) Children: or Flex items
+
+        in here we want to talk about the flex-items or the child of the flex container.
+        so we assume that we have a parent element which its display: flex
+
+        order: 
+            0 or - or +
+            order applied to the flex items and its default value is 0.
+            so 0 means the flex items follow the DOM element hierarchy. which means the second element will appear second after the first element. if you want to jump end in a queue, set order: 1, so flex items with the higher order value, will be placed at the end of the queue, visa versa if you want to be first in the flex items, although you are not the first flex items in the DOM elements,
+            add a negative value to the order. so flex items with order: -6 comes before evey other elements and before elements with oder bigger that -6.
+
+        align-self:  
+            with the align-self you can position each flex-item to the Cross Axis.
+            the value can be flex-start, flex-end, centern baseline, ....
+
+        flex-grow: 
+            when you set display: f;ex to the parent element, and also define width for the flex items, width means the minimum width thet the item can take, and if the parent elements has some remaining un-occupied space, the flex item will strech and grow to fill the gap. remember the defined width is the minimum. 
+            so flex-grow takes number, if two flex items has a different flex-grow, the one with the bigger value, growth in greater speed to takes the remaining space of the parent element. if flex-grow:0 then they did not grow and fixed to its defined width.
+            if two flex items has felx-grow of 3 and 5, then remaining space of the parent element dvivided by the 8 and 3/8 goes to one flex items and 5/8 goes to the other. 
 
