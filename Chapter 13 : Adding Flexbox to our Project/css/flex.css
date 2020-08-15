@@ -50,6 +50,7 @@ body {
   padding: 10px;
   margin: 10px;
   height: 250px;
+  flex-basis: ;
 }
 
 .item-4 {
