@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 2fr 2fr 5fr;
   grid-template-rows: 5rem 2.5rem;
+  justify-content: left;
 }
 
 .el1 {
@@ -27,6 +28,33 @@
 
 .myContainer {
   display: grid;
-  /* grid-template-columns: repeat(2, 20% 20% auto);
-  grid-template-rows: repeat(3, 2fr 2fr 6fr); */
+  grid-template-columns: repeat(6, 15%) auto;
+  grid-template-rows: repeat(4, 25%);
+
+  grid-template-areas:
+    "header-left header header header header header-right"
+    "side-left body body body body side-right"
+    "side-left body body body body side-right"
+    "footer-left footer footer footer footer  footer-right";
 }
+
+.span1 {
+  grid-area: header-left;
+}
+
+.span2 {
+  grid-area: header;
+}
+
+.span3 {
+  grid-area: header-right;
+}
+
+.span4 {
+  grid-area: body;
+}
+
+/* 
+.span7 {
+  grid-area: side-right;
+} */

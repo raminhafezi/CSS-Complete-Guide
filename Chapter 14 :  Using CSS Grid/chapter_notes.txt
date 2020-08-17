@@ -19,7 +19,7 @@
              grid-template-columns: 
                 200px 150px 20%
                 which means the first column width is 200px
-                second column width gets: 150px
+                second : 150px
                 and the last column takes 20% of the total container width
                  
                 fr: 
@@ -40,6 +40,9 @@
                         grid-template-columns: repeat(2, 20% 20% auto); 6 columns
                         grid-template-rows: repeat(3, 2fr 2fr 6fr); 9 rows
 
+                minmax():
+                    define minimum and maximum of the row or columns
+                        minmax(20px, 25%) minimum 20px and maximum 25% of the width  of the container.
 
                 for the size of each clolumn we can use px, rem, %, fr, or auto
 
@@ -48,7 +51,40 @@
             like the columns, we can also defined rows in the grid system.
 
 
-    we defined the 
+
+        - position each grid items in their rows and columns with
+        justify-items and align-items:
+
+
+        Justify = X or row
+        align   = Y or column
+            4- justify-items:
+
+                    position grid item in the row, or in the space that it takes,
+                    justify-content: center, 
+                        if the grid item takes 3fr, center place them at the center of the 3fr. 
+                    justify-content: end,
+                        posiiton grid item in the end of its place 
+
+
+            5- align-items: 
+                    positioning the grid items in the column. 
+                    align-items: start, 
+                            start of the column, 
+                
+
+
+        - positioning the whole grid, in their HTML container element with 
+        justify-conten and align-content. so if the whole grid placed in an html tag element that grid cannot fill all the hight or width, then these two will position our grid system in their parent, or container element. these two setting move the whole grid system, 
+
+            6- justify-content: 
+
+
+            7- align-content:
+
+
+
+
 
 2)Grid item:
 
@@ -67,6 +103,20 @@
             - grid-row-end: 3;
             takes both row 1 and row 2 
 
+            short-hand / 
+            we can shortened the start and end number
+            - grid-column: 
+                - grid-column: 1 / 4; we should use / 
+            or
+            - grid-row:
+                - grid-row: 1 / span 2
+            or summarize row and column
+            - grid-are:
+                - grid-area: 1 / 4 / 1 / span 2
+                the first two are start and end of the row numbers
+                the third and forth are the start and end of column numbers
+                it is important to devide with /
+
         span
             we cn use span also start from line number 2, takes two columns
             - grid-column-start: 2
@@ -76,3 +126,94 @@
             or take the whole row or column
             - grid-column-start: 1
             - grid-column-end: -1
+
+
+3- Gap between rows and columns
+    with the default value of grid system, each rows and columns stick to each other
+    with no gap in between, we can override this in the grid container.
+
+    - grid-row-gap : 2rem
+    - grid-column-gap :  12px
+    - grid-gap : 150px  --> both rows and columns get 150px gap
+        - grid-gap : 15px  25px ---> row 15px, columns 25px gap.
+
+
+
+3- Grid-Template-Areas:
+    we can think of the grid as a table, with fixed rows and columns
+    we can named each cell and use this name to position grid-items in it
+    so assume we have a grid table as 4X3 table 4 rows, 3 columns
+    
+    - in the grid container:
+        - grid-templat-areas : "header header header header"
+                              "side-left center center side-right "
+                              "footer footer footer footer "
+
+        so we have the same names as cell numbers, 12 cells, 12 names,
+        if you donot want to name any space or cell, just type . in its place
+        like 
+            - "header-side-left header header header . . header-side-right"
+
+        after you finished, check it out with firefox grid tool, and check,
+            "display-area-names" check-box
+
+    - in the grid-item:
+
+        - grid-are: header;    // without '' or ""
+
+    -Example:
+        .myContainer {
+            display: grid;
+            grid-template-columns: repeat(6, 15%) auto;
+            grid-template-rows: repeat(4, 25%);
+
+            grid-template-areas:
+                "header-left header header header header header-right"
+                "side-left body body body body side-right"
+                "side-left body body body body side-right"
+                "footer-left footer footer footer footer  footer-right";
+            }
+
+        .grid-item {
+            grid-area: header-left;
+        }    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
