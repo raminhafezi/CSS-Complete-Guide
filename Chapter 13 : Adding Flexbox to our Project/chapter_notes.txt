@@ -6,9 +6,9 @@ Video 175:
         - we have Main Axis and Cross Axis.
 
 
-Flex box is a way to change how our elements should displayed in the page:
+Flex box is a way to change how our elements should be displayed in the page:
 
-How to use Felx box: 
+How to use Flex box: 
         in the Element: 
             -display : flex --> that makes our element a Flex container.
                                 so if we set display as flex in an item, item becomes a flex container, and every container needs children. as soon as we set display as Flex, we can set bellow values to the flex container and flex items/children
@@ -31,14 +31,13 @@ Properties that can be set to the:
 
         Display : flex 
 
-                in the normal HTML DOM, elements palced bellow each other,
-                when you set parent element to the flex, then child  elements palced right after each other, and the children also adjust their hight. Also when you resize the page, children try to maintain themselves with the width of the page.
-                also when we set display:flex, we also automatically set two other property values
+                in the normal HTML DOM, elements will be placed bellow each other,    when you set parent element to the flex, then child  elements seat right after each other, and the children also adjust their hight. When you resize the page, children try to maintain themselves with the width of the page.
+                display:flex, we also automatically set two other property values
                 flex-wrap: nowrap, and flex-direction: row
 
 
         display : inline-flex:
-                Same as display:flex but children does not change their size then apge is resizing. hight would be adjusted with the most talled child.
+                Same as display:flex but children does not change their size when container element resized. hight would be adjusted with the most talled child.
 
 
         flex-direction:
@@ -71,29 +70,30 @@ Properties that can be set to the:
                                 all items adjust their hight to the bottom of the container element.
 
                 
-        Main-Axis       when flex-direciton is row, so the "Main-Axis" is from left to right  
-        and             and the "Cross-Axis" is from top to the buttom
-        Cross-Axis      if flex-direction: row-reverse, the "Main-Axis" is from right to left,
-                        and the "Cross-Axis" is from top to the buttom
+        Main-Axis       when flex-direciton is row, so the "Main-Axis" is from left to
+                        right and the "Cross-Axis" is from top to the buttom
+        Cross-Axis      if flex-direction: row-reverse, the "Main-Axis" is from right to
+                        left and the "Cross-Axis" is from top to the buttom
 
-                        when the flex-direction is column, the "Main-Axis" is from top to buttom
-                        and the "Cross-Axis" si from left to right, in Column-reverse, the 
-                        "Main-Axis" is from buttom to top and "Cross-Axis" from left to right
+                        when the flex-direction is column, the "Main-Axis" is from top to buttom and the "Cross-Axis" si from left to right, in Column-reverse, the "Main-Axis" is from buttom to top and "Cross-Axis" from left to right
 
 
         Align-items:    
-            with the align-items, we move our items along side of the "Cross Axis"
+            with the align-items, we move our items in the "Cross Axis"
 
-                stretch:        Default value, items with no height, take the height of the parent
+                stretch:        Default value, items with no height, take the height of
+                                the parent
 
-                flex-start:     items align to the start of the flex container, Cross Axis.
+                flex-start:     items align to the start of the flex container, Cross
+                                Axis.
                                 So if the flex-direction: row, The starting point is from top left corner of the container. Main Axis is from left to right
                                 and Cross Axis od from top to bottom. Align-items moves items across the Cross Axis then flex-start places items to the top left of the container. 
 
                 flex-end:       items align to the end of the flex container Cross Axis.
                                 So if the flex-direction: row, Align-items moves items across the Cross Axis then flex-end places items to the buttom left of the container.  
                                 
-                center:         items align to the center of the flex container Cross Axis, 
+                center:         items align to the center of the flex container Cross
+                                Axis, 
 
                 stretch:        items align to the take whole height of flex container Cross Axis
 
@@ -166,5 +166,39 @@ Properties that can be set to the:
             this is the short hand form for flex-grow, flex-shrink, flex-basis
             flex: 0 1 auto is all short form for flex-grow:0, flex-shrink:1, flex-basis: auto
             
+
+Aggregate:  display: flex set your html element as a felx container. also apply some
+            style to container children. The default value for align-item:stretch and 
+            justify-content: flex-start, flex-direction: row
+            it is imporatant to understand the concept of Main vs Cross Axis
+            with 
+                flex-direction: row, 
+                        Main-axis: left-right
+                        Cross-axis: top to buttom
+                flex-direction: reverse- row, 
+                        Main-axis: r-leftight
+                        Cross-axis: top to buttom
+                flex-direction: column, 
+                        Main-axis: top to buttom
+                        Cross-axis: left-right
+                flex-direction: reverse-column, 
+                        Main-axis: buttom to top
+                        Cross-axis: left-right
+
+            justify-content: move you flex-items in Main-axis
+            align-item:      move you flex-items in Cross-axis
+
+            wrap: nowrap is a default value, and wrap all child in a main-axis or add another line of main axis, and move child in case of parent element resize
+
+            some setting also can be set into the flex-item/child of the flex-container
+
+            order: to change the default order of the child
+            align-self, flex-grow, flex-shrink, flex-basis or short form of it, flex:
+
+
+
+                  
+                
+
 
 

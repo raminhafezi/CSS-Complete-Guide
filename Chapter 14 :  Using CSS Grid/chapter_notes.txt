@@ -1,0 +1,78 @@
+ Video 192: 
+
+    CSS Grid    
+    Grid is mostly used today for designing the page. Image your page as the combination of rows and columns. and with the CSS grid, we define each element to place in the page.
+
+    the best tools for debugging grid display is FireFox. when you debug your grid page with the firefox, you can inspect the grid html element and grid icon. when yoou click on it, border of the grid also will be visible in your page.
+
+1) Pranet Element:
+
+    display: grid
+        set parent element display: grid
+
+        1- default Grid:
+            if you set grid as a display of an html element, by default it get 1 column and based on number of child, it gets same number of rows.
+            we can override this behavior by defining number of columns and rows that we want.
+
+        2- grid-template-columns: 
+        
+             grid-template-columns: 
+                200px 150px 20%
+                which means the first column width is 200px
+                second column width gets: 150px
+                and the last column takes 20% of the total container width
+                 
+                fr: 
+                    we can also use fr or fraction. to divide the entire width of the grid element and then split the columns based on that
+                    
+                    grid-template-columsn: 2fr 3fr 6fr 4fr
+                        means divide the width of the containe to 15 portions.
+                        2 portions to the first column, 3 to second column, 6 to the third column and 4 to the last column.
+                auto: 
+                    auto means take the remaining space, usually used for the last items in the column or row in the grid container. 
+                 
+                repeat():
+                    repeat(): is a funciton that you can used to devide space equally or in a pattern 
+                    grid-template-columns: 
+                        repeat(4, 25%) : 4 columns, each take 25% of the grid container width
+                        repeat(3, 20% 80%): make 6 columns, even columsn numbers is 4times bigger than odd column number
+
+                        grid-template-columns: repeat(2, 20% 20% auto); 6 columns
+                        grid-template-rows: repeat(3, 2fr 2fr 6fr); 9 rows
+
+
+                for the size of each clolumn we can use px, rem, %, fr, or auto
+
+        3- grid-template-rows:
+
+            like the columns, we can also defined rows in the grid system.
+
+
+    we defined the 
+
+2)Grid item:
+
+    by default in the grid system, item placed from left to right and from top to the buttom. But we have an option to customize each grid item in a place that we want, maybe we want 3rd item in the first row, takes both third and forth columns all together. So basically, we can placed each item individually in thegrid system. we can say where this grid item should be seated. 
+    if you have a look at the firefox grid, you can see there are lines in the grid system. and each line has a number. 
+    We will use this line number to palce our item in the grid.
+    we will do this by seting bellow setting to the grid item.
+
+        number:
+            - grid-column-start: "start column number"
+            - grid-column-end: "end column number"
+            - grid-row-start: "Start-row-number"
+            - grid-row-end: "End-row-number"
+            so 
+            - grid-row-start: 1;
+            - grid-row-end: 3;
+            takes both row 1 and row 2 
+
+        span
+            we cn use span also start from line number 2, takes two columns
+            - grid-column-start: 2
+            - grid-column-start: span 2 
+
+        -1
+            or take the whole row or column
+            - grid-column-start: 1
+            - grid-column-end: -1
