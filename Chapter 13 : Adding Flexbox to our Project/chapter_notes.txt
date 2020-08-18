@@ -43,8 +43,8 @@ Properties that can be set to the:
         flex-direction:
             When you set display:Felx, you automaticaly applied flex-direciton : row
 
-                row:            all items adjust to the left, all take one row, item with
-                                no height, take the maximum height of its neighbours. 
+                row:            all items adjust to the left, all take one row, item
+                                with no height, take the maximum height of its neighbours. 
                                 items adjust to the top.
 
                 row-reverse:    first child would be the last child in the row.
@@ -55,14 +55,14 @@ Properties that can be set to the:
                 column:         each item takes one row, adjust ot the left, items with
                                 no width take the width of the parent element.
 
-                column-reverse: first child placed on the last row each item takes one row,
-                                adjust to the left, items with no width take the width of the parent element.
-        start
+                column-reverse: first child placed on the last row each item takes one 
+                                row, adjust to the left, items with no width take the width of the parent element.
+        
                 nowrap:         display:Felx, you automaticaly applied flex-wrap : nowrap
+                                By default, a flex container will fit all flex items together. For example, a row will all be on one line. and if 6 flex items each has width of 25%, the display:flex will put all of them into one row/Main Axis. But if we set flex-wrap: wrap, 4 items will be seat next to each other, (width: 25%) and the next two flex items move to the next line. 
             
-                wrap:           when the page resize or child can not be palced next to each
-                                other in one row ont he parent element container, then last childs
-                                will be moved to the next row. All items adjust its height to the top
+                wrap:           This means extra items move into a new row or column. The
+                                break point of where the wrapping happens depends on the size of the items and the size of the container. 
                                 
 
                 wrap-reverse:   when children can not be placed in one row next to each other,
@@ -144,18 +144,23 @@ Properties that can be set to the:
             add a negative value to the order. so flex items with order: -6 comes before evey other elements and before elements with oder bigger that -6.
 
         align-self:  
-            with the align-self you can position each flex-item to the Cross Axis.
-            the value can be flex-start, flex-end, centern baseline, ....
+            This property allows you to adjust each item's alignment individually, instead of setting them all at once. 
+            align-self accepts the same values as align-items and will override any value set by the align-items property.
+
+        flex-shrink:
+            it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
+            The flex-shrink property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. For example, if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 3, the one with the value of 3 will become smaller three times as much as the other.
 
         flex-grow:  
-            when you set display: flex  and nowrap to the parent element, and also define width for the flex items, width means the minimum width thet the item can take, and if the parent elements has some remaining un-occupied space, the flex item will strech and grow to fill the gap. remember the defined width is the minimum. 
+            The opposite of flex-shrink is the flex-grow property. Recall that flex-shrink controls the size of the items when the container shrinks. The flex-grow property controls the size of items when the parent container expands.
             so flex-grow takes number, if two flex items has a different flex-grow, the one with the bigger value, growth in greater speed to takes the remaining space of the parent element. if flex-grow:0 then they did not grow and fixed to its defined width.
             if two flex items has felx-grow of 3 and 5, then remaining space of the parent element dvivided by the 8 and 3/8 goes to one flex items and 5/8 goes to the other. 
 
-        flex-shrink:
-            default value is 1. flex items with the greate flex-shrink value, minimize more when the page width decrease. Default value for each flex-item is 1 so every flex item can shrink.
 
         flex-basis:
+            The flex-basis property specifies the initial size of the item before CSS makes adjustments with flex-shrink or flex-grow.
+
+            The units used by the flex-basis property are the same as other size properties (px, em, %, etc.). The value auto sizes items based on the content.
             flex-basis defines the size of the element in relates to the Main Axis. so if the Main Axis is Row, which means parent of the flex items has a flex-direction: row, and flex items has a width=350px. if we define flex-basis: 300px it means this flex item can shrink but not more than 300px. 
             as you know, the default value for flex-shrink is 1, so every flex items can shrink by default. 
             it is important to know that flex-bases also could be the height of the flex items, the parent element if the flex item ahs flex-direction: column then the Main Axis is Column and flex-basis in this case define the height of the element not the width like previous example with flex-direciton:row
