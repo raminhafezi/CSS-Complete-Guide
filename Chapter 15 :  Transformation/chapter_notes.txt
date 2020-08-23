@@ -1,0 +1,74 @@
+Video: 218:
+
+CSS Transition:
+
+Transform:
+    this CSS property keep the document in the DOM flow and it is hardware accelerated
+    so it is better to use this property that setting margin and padding of the top and bottom
+
+    - transform = 
+        it rotates the element around the center. we can change this behavior with
+
+        - rotateX() rotateY() rotateZ():
+            rotate around center point
+
+            rotateY(180deg) change writing direction
+            rotateX(180deg) change writing ups and downs
+
+        -  translateX() translateY() translateZ(): 
+            move the element along side the X axis, remember when you rotate the element, you also rotate the X and Y axis as well. 
+
+        - scaleX() : 
+            zoom and stretch in X axis
+            scaleX(2) twice the size of the container, or image inside the container
+
+            scale(3) applied to both scaleX() and scaleY()
+            
+
+    - transformY():
+            move the element along side the Y axis
+
+    - transform-origin: 
+
+        the default value is center, but we can change it to left or left top
+        so when transform-origin = top left, the top left of your element will be stay in its place and donot move, so the element rotate or more around it.
+
+        transform: rotateZ(45deg)
+        transform-origin = 1rem 1rem // 1rem to the right, 1 ram to the bottom
+        transform-origin = 25% 50% 
+
+    - translateX():
+    - translateY():
+    - translateZ():
+        if you imagine there is a X, Y, as well as axises at the center of each element, then translateX(), translateY(), and  translateZ() move elements alongside its X, Y and Z axis.
+
+    
+
+
+
+    - overflows : hidden:
+        this means any child inside this element that goes beyond container border, will be cut off.
+
+
+
+
+3-D Transformation: 
+
+    in 3-D, we can rotate on 3 axis, 
+
+    - transform: rotateX():
+        this rotate an element on the X axis, by rotating it goes toward you or go away from you. 
+        So rotate(90deg) makes an element completly out of our sight, because it is flipped on the X axis (left to right) and because it;s hight is 0, we can not see anything. 
+        rotateX(100deg) flipped top to bottom and rotateX(180) completly reverse the element
+
+    - transform: rotateY():
+        rotate on the Y axis, rotateY(90), again we can not see anything because the elemenet does not have height. So it looks like we are watchig a paper from the side.  rotateY(180deg) reverse the object. so if we have a text which is written left to right, then we rotate it 180deg, then text look like we have written from right to left.
+
+
+    - perspective():
+        transform: perspective(100px) it looks like we are seating next to the element.
+        and the element looks like a dart on the board and we place our eye close to the dart end , So dart looks like goind toward us from the wall,.
+
+        the smaller the perspective value, we are closer to the element. so 
+        transform: perspective(1px) looks like we are 
+
