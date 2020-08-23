@@ -72,3 +72,8 @@ Transform:
         the smaller the perspective value, we are closer to the element. so 
         transform: perspective(1px) looks like we are 
 
+
+
+- backface-visibility:
+    when you flip or rotate an html element or the container of an element, css default value is to show the backface of the element ebcause the default value is visible,
+    if you set backface0visibility: hidden; then it will be hidden

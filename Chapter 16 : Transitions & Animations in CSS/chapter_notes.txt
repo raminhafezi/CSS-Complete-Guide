@@ -1,0 +1,167 @@
+video: 230: 
+
+1) CSS Transition:
+    transition is like a built-in animation, 
+    transition is what to look for if the value of it changes, animate this changes
+    for example if you want the opacity of an element be watched and animate in case of changes, you set the transition:opacity
+
+    Befoire that we hide and display element such as backdrop or modal in our page with display:none and display: visible . The prblem with this approach is that display property can not be animated or wathced by the transition.
+    we can replace those two by changing the opacity from 0 to 1, so the element can be visible. and we can animate this by transition
+
+    so with the transition, we say 
+        - which property should be watched, 
+        - how it should be animated, 
+        - the timing of the animation 
+        - how fast it sould animate, 
+        - what is the initial delay
+
+    in the transition we can set up to 4 values, 
+        1- The first one should be which setting should be watched
+            you can select nore than one setting, by sepetating them with ,
+            - transition: opacity, transform;
+        2- The second is the duration of the animation 
+            - ms for milli seconds or 
+            - s for second
+            - transition: opacity 0.5s, transform 300ms
+        
+        3- how should go through operation, if does not set, take the same amount of time as we set transition: opacity 200ms; --> take 200ms to go in as well as go out of this animation, with ease-out, transition: opacity 200ms ease-out; 
+        take longer time
+            - ease-in   
+            - ease-out
+            - ease-in-out
+
+        4- delay befre start
+            - transition: opaciy 300ms ease-out 1s;
+
+
+- cubic-bezier:
+    is a nice function to have animate and customize ease-in, ease-out you can simply check the www.easings.net website or open your page with firefox and have check the transition element and customize it with the firefox developer tools. 
+
+        -   transition: opacity 100ms cubic-bezier(1,0,0,1), 
+                        transform 1s cubic-bezier(.38,-0.52,0,.98);
+
+
+
+- combination of display and  opacity in transition
+
+    this is a good example by working with the backdrop.
+    bacause when we set backdrop to none and change it with the js class to set backdrop to block to be visible by the user (add open class to backdrop class in this example), we also change the z-index, because we want to disable user interacting with the page as long as backdrop is open.
+
+    so if we have backdrop in our project and we change display none to block, then opacity and changing opacity value with the transition does not work becasue transition would not pick up by the CSS. 
+
+
+
+    Hack for animate backdrop
+        - we need backdrop to be open and close by the JS, by simply adding or removing 
+        .open{} class to the backdrop css class. in the CSS
+            
+            .open {display: block; opacity: 1; transform: translateY(0)}
+        also in the backdrop class
+        
+            .backdrop {display: none; opacity: 0; z-index: 100;
+                        transition: opacity 200ms ease-out;}
+        so, when the backdrop is open, we add .open class to the .backdrop CSS class with the help of the JS. we need that z-index because we want to block user interaction with the page elements. The problem is when display: none, then animating the opcity from 0 to 1 would not pick up by the transition. 
+        so we need to simply add display:block then we can transite the oapcity and animate backdrop . So, in the JS, everytime we want to add or remove .open CSS class to the backdrop class we first need to set/remove display:block and then wait around 10ms and then add/remove .open class. So in the short period of time, we change the backdrop display from none to block and then in 10ms we execute the adding .open{} to the backdrop, which animate the opacity of the backdrop.
+
+        Exmaple in JS:
+
+            backdrop.style.display = "none";
+            setTimeout(() => {
+                backdrop.classList.remove("open");
+            }, 10);
+
+            backdrop.style.display = "block";
+            setTimeout(() => {
+                backdrop.classList.add("open");
+            }, 10);
+
+
+2) CSS Animation:
+
+    CSS animation is like the CSS transition with more features.
+    with the CSS animation, we have keyframe, which is an state, and we can define more that one key frame, 
+    also in the css animation we have repeatition, final state
+
+    - @keyframes keyframes_name {}:
+        keyframe is the state of the animation, we can have first and final state and we can add more state/keyframes in the middle. in the keyframe we have full control of the syle of the element. So basically we first define keyframe(s) adn then assing this keyframe to the element animation property.
+
+        @keyframes wiggle {
+
+            from {
+                transform: rotateZ(0);
+                color: white;
+                background: #ff1b68;
+            }
+
+            to{
+                transform: rotateZ(10deg); 
+                color: #ff1b68;
+                background: white;
+            }
+        }
+
+
+    - animation : 
+        1- keyframes_name
+        2- Duration fo the animation 
+        3- Delay from the start
+        4- Repeatition, how many times play the animations.
+        5- timing function between states of the animation.
+
+        - .main-nav__item--cta {
+                animation: wiggle 300ms 2s 8 reverse;
+                }
+
+
+    Animation With Multiple States
+
+        we can use % instead of to/from. so we can have multiple states not just two
+
+        @keyframes wiggle {
+            0%{
+                transform: rotateZ(20deg);
+            }
+            25%{
+                transform: rotateZ(30deg);
+            }
+            50%{
+                transform: rotateZ(40deg);
+            }
+            75%{
+                transform: rotateZ(40deg);
+            }
+            100%{
+                transform: rotateZ(-20deg);
+            }
+         }
+
+
+
+JavaScript Event Listener,
+
+JS has a 3 events listener that is bounded into the animation
+if you select the element that you want to animate, you can listen to the events
+
+enimatedElement.addEvenetListener('animationstart', (event) => console.log('Start'))
+enimatedElement.addEvenetListener('animationiteration', (event) => console.log('Iteration'))
+enimatedElement.addEvenetListener('animationend', (event) => console.log('End'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
