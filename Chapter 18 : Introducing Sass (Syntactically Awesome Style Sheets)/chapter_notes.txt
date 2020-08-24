@@ -1,0 +1,290 @@
+video: 244: 
+
+SASS / SCSS:
+
+    1- SASS and SCSS are syntetically the same
+        - Syntatically Awesome Style Sheets
+        - Do not run in the browser
+        - Extends CSS (during Development)
+        - Sass offers nested css
+        - Compiled to CSS Before Production
+        - Needs to install SASS tool
+        - We can inherited from other css file,
+        - Helper functions
+        - Coditions and loops
+        - Variables and Partials
+        
+
+1- we need to install SASS so our sass code will compile to css code and the Extends
+    - www.sass-lang.com
+    
+    - install sass in linux mint:
+        - apt-get install ruby-full
+    
+    - install sass via gem
+        - sudo gem install sass
+
+
+
+2- make a sass code
+    - make a file and name it, 
+        - main.sass
+    - in the sass file, we donot need ";" at the end and also we donot need {}
+    - the simpler way to use sass, it to make a file and name it .scss
+        - main.scss
+
+
+
+
+
+3- compile your scss file
+    - The original SCSS file would not work , so we need to compile scss file and generate the css file,
+
+        - sass main.scss main.css
+
+    - ongoing compile.
+    we can use "watch" command to look for the scss file and automatically generate css file whenever there is a change in the scss file
+
+        - sass --watch main.scss:main-1css
+
+
+4- Nesting Selectors in Sass
+    - we can have a nested Selectors
+    - Examples:
+
+        From:
+        - .documentation {}
+        - .documentation li{}
+
+        To:
+        - .documentation{
+
+            .li{}
+        }
+
+        or 
+        from:
+        - 
+    
+5- Nesting Properties in Sass
+    - like nested selectors, we can have nested Properties
+
+    Example:
+    from:
+    - display : grid;
+    - grid-template-rows:  1fr 1fr 1fr;
+    - grid-template-columns: 25% 50% auto;
+    - grid-template- area: "header header header" "main main ." "footer . footer";
+    - grid-gap: 10px 10px;
+
+    to:
+    - #product-mainview {
+        display: grid;
+        grid: {
+            template: {
+            rows: 1fr 1fr 1fr;
+            columns: 25% 50% auto;
+            area: "header header header" "main main ." "footer . footer";
+            }
+            gap: 10px 10px;
+        }
+        }
+
+6- variables, lists, and maps:
+    we can use variables in the sass as well
+    we can make anything as a variable, a single value or a list(more than one value)
+    or a map(key-value pair)
+    
+    
+    - variables usually define with "$"
+        - $main-color: #53531
+        - $grid-gap : 10px 2rem;
+        - $border-default: 10px solid $main-color;
+        - $font-default: 'sans-serif', 'tahoma'; // we can use "," as well.
+
+    - then use in on your scss file
+        - backgroud-color: $main-color;
+
+    - using map
+        - first we define our map:
+            - $colors: (main: 'red', secondary: 'blue', default: 'grey')
+
+        - map-get(), retrieve from the map:
+            - background-color: map-get($colors, secondaty)
+
+
+
+7- comments in sass // this is a comment, comment start with double "/"
+
+8- built-in functions:
+    - sass has many built in funcitions: 
+        - https://sass-lang.com/documentation/modules
+
+        - lighten(color, amout)
+            - if we have two colors that depends on each other, we can use built-in funciton named lighten(): takes two argument, first is the color, which can be a variable as well, the second argument is the amount of lighter than the refrenced color in %: 
+
+                - color: lighten($get-map($color, default), 50%)
+
+
+
+9- Arithmatic
+    
+    - in sass we can use arithmatic, quite often in our desing we need to use size than are related to each other, we ususally define the default size and default tiny size as 1rem and 0.1rem and we size  other elements based on the default size, we can use arithmatic in sass in those situation
+
+    - first define default size:
+        - $default-size: 1rem;
+        - $tiny-size: 0.1rem;
+
+    - use aruthmatic
+
+        - .section{
+            margin: $default-size * 3; 
+            padding: $default-size / 5;
+        }
+
+
+ 10- importing in sass
+
+    - it is among the good practice to have multiple files for our desing file. one file named as _variable.scss (partial sass file start with _ usually)
+    - then we can import this file into the main.scss file by
+
+        - @import '_variable.scss'
+    
+    - what sass does it, sass import that file and make one big css file during compile time, so we have a one big css file in our project which is good, because user need only 1 request. 
+    
+
+11- Mediaquiery in sass 
+
+    - we can also nest media() into the elements
+
+    - From:
+        - @media (min-width: 40rem) and (min-height: 60rem) {
+            #product-overview {
+                height: 40vh;
+                background-position: 50% 25%; }
+            }
+
+        - #product-overview {
+            background-image: url("../media/images/freedom.jpg");
+            background-origin: border-box;
+            background-clip: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 33vh;
+            position: relative; }
+
+    - To:
+
+        - #product-overview {
+            background-image: url("../media/images/freedom.jpg");
+            background-origin: border-box;
+            background-clip: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 33vh;
+            position: relative; 
+            
+            @media (min-width: 40rem) and (min-height: 60rem) {
+                height: 40vh;
+                background-position: 50% 25%; }
+            }
+
+
+12- Inheritance in sass with @extend .className;
+
+    - the idea is if we have a more than one class that have many shared properties between them, we can make a new class and move all shared properties in a new class, and in our two original classes we can inherited shared features from the new class;
+
+        .clasA {}
+        .classB{}
+        .newClass{ // shared features of the classA and classB in here}
+        
+    -then we inherite in classA and classB from newClass
+        .classA{
+            @extends .newClass;
+        }
+
+        .classB{
+            @extends .newClass;
+        }
+
+
+13- Mixin -- writing your own function with @mixin and @include
+
+    - if you have some common geatures in your code that is shared between many other classed, we can write a mixin (function), that takes some argument as well, and then move the shared properties into our mixin, and then include (call) that mixin whenever we want.
+
+
+    - define your mixin
+        
+        @mixin myCommonFlex() {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        @mixin myCommonGrid($justify, $align) {
+                    display: grid;
+                    gird: {
+                        template-rows: 1fr 1fr 1fr;
+                        template-columns: 15% 50% 15% auto;
+                        gap: 5px 2px;
+                    }
+                    justify-items: $justify;
+                    align-items: $align;
+                }
+
+    - use mixin as a properties:
+
+            - .main-nav {
+                @include: myCommonFlex();
+                padding: 2px 20px;
+                margin-top: 0;
+            }
+
+            - .side-nav {
+                @include: myCommonGrid(center, grid-start);
+            }
+
+
+14- connect properties to gether, not nesting with &
+
+    - if we have a 
+            .modal and 
+            .modal:hover or 
+            .modal:active
+        and if you nested two last two into the .modal class,
+        what sass compiled is 
+            .modal {
+                .modal .modal:hover, .modal .modal:active {}
+            }
+
+     bacause by nesting properties, the sass connect as a nested elements,
+     if we want sass to not connecting as a nested properties but connecting those two to gether, we can use &
+
+     so 
+     - From:
+        .modal {
+             .modal:hover {} 
+             .modal:active {}
+            }
+    - To:
+        .modal {
+            &:active{}
+            &:hover{}
+        }
+
+    then sass create 
+
+        .modal{
+            .modal:active{}
+            .modal:hover{}
+        }
+
+
+
+

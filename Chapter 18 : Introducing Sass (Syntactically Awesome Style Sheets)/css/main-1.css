@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Montserrat;
+  margin: 0; }
+
+#product-mainview {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% auto;
+  grid-template-area: "header header header" "main main ." "footer . footer";
+  grid-gap: 10px 10px; }
+
+#product-overview {
+  background-image: url("../media/images/freedom.jpg");
+  background-origin: border-box;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 33vh;
+  /* margin-top: 2.75rem; */
+  position: relative; }
+  #product-overview .h1 {
+    color: white;
+    font-family: "Anton", "sans-serif";
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 1.5rem; }
+
+@media (min-width: 40rem) and (min-height: 60rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%; } }
+.section-title {
+  color: #2ddf5c;
+  text-align: center; }
+
+.plan {
+  background: #d5ffdc;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%; }
+  .plan:hover, .plan:focus, .plan:active, .plan:focus {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.88);
+    outline: none; }
+  @media (min-width: 40rem) and (orientation: landscape) {
+    .plan {
+      display: inline-block;
+      width: 30%;
+      margin: 0.5rem 0.2rem;
+      min-width: 13rem;
+      max-width: 22rem; } }
+
+.plan__highlighted {
+  background: #19b84c;
+  color: white;
+  border-radius: 6px; }
+  .plan__highlighted:focus, .plan__highlighted:active, .plan__highlighted:visited {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.999);
+    outline: none;
+    transition-delay: 600ms;
+    transition: 0.75s all; }
+  .plan__highlighted:hover {
+    background: white;
+    color: #032e11;
+    transition-delay: 600ms;
+    transition: 0.75s all; }
+    .plan__highlighted:hover .button {
+      color: yellow;
+      transition-delay: 600ms;
+      transition: 0.75s all; }
+    .plan__highlighted:hover .plan__annotation {
+      background: #49504b;
+      color: white;
+      transition: all 500ms ease;
+      transition-delay: 300ms; }
+  .plan__highlighted .plan__price {
+    color: var(--dark-green); }
+  .plan__highlighted:hover .plan__price {
+    color: black;
+    background-color: yellow;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px 2px rgba(2, 2, 2, 0.88);
+    transition: all 500ms ease;
+    transition-delay: 300ms;
+    display: inline;
+    padding: 0.25rem 0.5rem; }
+  @media (min-width: 40rem) and (orientation: landscape) {
+    .plan__highlighted {
+      box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.49); } }
+
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  display: inline-block;
+  padding: 0.25rem 0.5rem; }
+
+.plan__title {
+  color: var(--dark-green); }
+
+.plan__price {
+  color: #858585; }
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.plan_feature {
+  margin: 15px 0px; }
+
+@media (min-width: 40rem) and (orientation: landscape) {
+  .plan__list {
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0.5rem 0.2rem;
+    min-width: 13rem;
+    max-width: 22rem; } }
+#key-features {
+  background: #ff1b68;
+  margin-top: 5rem;
+  padding: 1rem; }
+  #key-features .section-title {
+    color: white;
+    margin: 2rem; }
+
+.key-features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none; }
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    list-style: none; } }
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.25rem; }
+
+.key-features__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.25rem;
+  stroke: black;
+  stroke-width: 4px; }
+
+/* #key-features li {
+      display: inline-block;
+      text-align:center;
+      margin: 0px 5px;
+  } */
+.h3 {
+  padding: 0.25rem; }
+
+div > span > p {
+  color: blue; }
+
+div > ul {
+  background: #6671cf;
+  padding: 0.25rem;
+  margin: 2px; }
+
+.orderList {
+  width: 20%; }
+
+/* Modal Style Section */
+.modal {
+  position: fixed;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: opacity 100ms cubic-bezier(1, 0, 0, 1), transform 1s cubic-bezier(0.38, -0.52, 0, 0.98);
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-size: 1rem; }
+
+.modal__actions {
+  text-align: center; }
+
+.modal__action {
+  border: 1px solid var(--dark-green);
+  border-radius: 0.5rem;
+  background: var(--dark-green);
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer; }
+  .modal__action:hover, .modal__action:active {
+    background: var(--modal-actionColor);
+    border-color: var(--modal-actionColor); }
+
+.modal__action--negative {
+  background: red;
+  border-color: red; }
+  .modal__action--negative:hover, .modal__action--negative:active {
+    background: var(--model-actionNegativeColor);
+    border-color: var(--model-actionNegativeColor); }
+
+.root {
+  --model-actionNegativeColor: #ff5454;
+  --modal-actionColor: #2ddf5c;
+  --dark-green: #0e4f1f; }
+
+/*# sourceMappingURL=main-1.css.map */

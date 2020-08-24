@@ -1,1 +1,96 @@
 video: 237: 
+
+
+1) CSS Variable:
+
+    if we define the variable in the .root{}, we can use it through out the entire CSS or every element in the page
+
+    - define variable:
+        allways start with --
+        .root{
+            --my-color: #fa923f;
+        }
+
+    - use variable:
+
+    .element-1 {
+        color: var(--my-color, red); // default is my color, if --my-color is 
+                                     // not valid, red is fall-back value
+    }
+
+2) Vendor Prefixer:
+
+    you code might not workl in the older browser and you need to add some extra features or browser specific CSS syntax/ Vendor Prefixed
+
+    the easiest way to implement this is to use autofixers
+        - use this plugin: 
+            https://github.com/postcss/autoprefixer
+        - use this online tool to add vendor Prefixed
+            http://www.cssdrive.com/cssautoprefixer/
+
+3- Supports()
+
+    we want to make sure that a certain features are supported by the borwser and then apply related CSS code, otherwsie we want to have a decent fall-back code to support our back
+
+    like for example, we want to check if the browser support grid system or not, before applyting the grid position:
+
+    - We split from this code:
+        body {
+            font-family: Montserrat;
+            margin: 0;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 3.5rem auto 8rem;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+            }
+
+    - to this code:
+        // the default
+        body {
+            font-family: Montserrat;
+            margin: 0;
+            height: 100%;
+        }
+
+        // if support grid, then add these code to the body CSS
+        @supports(display: grid) {   //if display: grid returns true. then .....
+            body {
+                display: grid;
+                grid-template-rows: 3.5rem auto 8rem;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "footer";
+            }
+        }
+
+
+4) Polyfills 
+
+    pollyfills: is a JavaScript package which enable certain CSS features in Browsers that does not support that features natively.
+
+5) Eliminate Cross-Browser Inconsistencies
+    
+    different browsers use different default value for CSS.
+
+    so we can use some reset library, like normalize.css that 
+    or we can do it manually by * { box-sizing: border-box;}
+
+
+
+6- How to choose CSS class normalize
+
+    CSS is case-insensitive: so camelCase and camelcase are identical 
+    So:
+    1- use kebab-name: 
+        main-header-brand{}
+    
+    2- donot use snakeCase
+        mainHeaderName{}
+
+
+    3- name you class by features
+        .page-title {} 
